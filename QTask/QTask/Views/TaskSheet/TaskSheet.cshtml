@@ -1,0 +1,479 @@
+﻿@{
+	ViewData["Title"] = "TaskSheet";
+	Layout = "~/views/shared/_layout.cshtml";
+}
+
+<div class="main-content-div">
+
+	<!-- popup-edit-profile-div start -->
+	<div class="popup-edit-profile-div">
+
+		<h3 class="mbt-1">
+			<span><i class="fa fa-user"></i> My Profile</span>
+			<a href="javascript:void(0)"><i class="fa fa-times"></i></a>
+		</h3>
+
+		<div class="view-myprofile-div">
+		</div>
+	</div>
+</div>
+<div class="padder">
+	<div id="task-management-sec">
+
+		<div class="heading-div">
+			<h2 class="mbt-1 heading-2"><i class="fa fa-table alt"></i> TaskSheet Management</h2>
+			<div class="align-right mbt-1">
+				<button class="button blue-btn btn-setting"><i class="fa fa-plus"></i></button>
+			</div>
+		</div>
+		<div class="table-design-div">
+			<div class="filter-form gap-1 grid grid-col-4 tab-grid-col-2 mob-grid-col-1 pbt-1" id="header">
+				<div class="f-input-div filter-col">
+					<label>Project Name</label>
+					<select class="f-input" name="ddProject" id="ddProject">
+						<option value="">Select Project</option>
+						<option value="Quantum Website">Quantum Website</option>
+						<option value="Invest Online">Invest Online</option>
+						<option value="QInvestMIS">QInvestMIS</option>
+						<option value="CRM">CRM</option>
+						<option value="EKYC">EKYC</option>
+						<option value="QConnect">QConnect</option>
+						<option value="QOpsReport">QOpsReport</option>
+						<option value="QOpsReport-Core">QOpsReport-Core</option>
+						<option value="Invest Online Mobile App">Invest Online Mobile App</option>
+						<option value="Other">Other</option>
+					</select>
+				</div>
+
+				<div class="f-input-div filter-col">
+					<label> Resource Name</label>
+					<select class="f-input" name="ddbyname" id="txtByName">
+					</select>
+				</div>
+
+				<div class="f-input-div filter-col">
+					<label>Status</label>
+					<select class="f-input" name="ddStatus" id="txtlststatus">
+						<option value="">Select Status</option>
+						<option value="Yet To Start">Yet To Start</option>
+						<option value="In Progress">In Progress</option>
+						<option value="UAT">UAT</option>
+						<option value="Live">Live</option>
+						<option value="OnHold">OnHold</option>
+						<option value="Completed">Completed</option>
+					</select>
+				</div>
+
+				<div class="f-input-div filter-col">
+					<label>Jira Id</label>
+					<input type="text" class="f-input" id="txtJiraId">
+				</div>
+
+				<div class="f-input-div filter-col align-lbt">
+					<button id="btnSearch" class="blue-btn search">
+						<i class="fa fa-search"></i> Search
+					</button>
+				</div>
+			</div>
+
+
+			<div id="dvTimesheetList">
+				<div class="div-scroll">
+					@* <div class="action-div">
+					<div class="form-group-div">
+					<input type="checkbox" id="checkAll">
+
+					<button class="prev">&lt;</button>
+					<button class="first">&lt;&lt;</button>
+
+					<div>
+					<span class="pg-no" page-id="1">0</span> - <span class="pg-current-total">0</span> of <span class="pg-total">0</span>
+					</div>
+
+					<button class="next">&gt;</button>
+					<button class="last">&gt;&gt;</button>
+					</div>
+					<div class="form-group-div">
+					<button class="bulk-btn" title="Bulk Action"><i class="fa fa-tasks"></i></button>
+					</div>
+					</div> *@
+
+					<table id="table-one" class="table-stripe resp-table table-view">
+						<thead>
+							<tr>
+								<th></th>
+								<th>Jira Id</th>
+								<th>Task</th>
+								<th>Project Name</th>
+								<th>resources Name</th>
+								<th>Estimated Start Date</th>
+								<th>Estimated End Date</th>
+								<th>Estimated Hours</th>
+								<th>Actual Start Date</th>
+								<th>Actual End Date</th>
+								<th>Actual Hours</th>
+
+
+
+								@* <th>Date</th>
+								<th>&nbsp;</th> *@
+								<th width="100">Actions</th>
+							</tr>
+						</thead>
+						<tbody id="tbl-taskSheet-body">
+						</tbody>
+					</table>
+					@* <div class="action-div">
+					<div class="form-group-div">
+					<input type="checkbox" id="checkAll">
+					<button class="prev">&lt;</button>
+					<button class="first">&lt;&lt;</button>
+
+					<div><span class="pg-no" page-id="1">0</span> - <span class="pg-current-total">0</span> of <span class="pg-total">0</span></div>
+					<button class="next">&gt;</button>
+					<button class="last">&gt;&gt;</button>
+					</div>
+					<div class="form-group-div">
+					<button class="bulk-btn" title="Bulk Action"><i class="fa fa-tasks"></i></button>
+					</div>
+					</div> *@
+				</div>
+			</div>
+
+			<div id="divPagination" class="pagination">
+			</div>
+			<div id="divPageDropdown" class="page-dropdown">
+				<select id="ddlPageList" name="ddlPageList" class="page-option getinthenews_page-option"></select>
+				@* <ul id="ddlPageList"></ul> *@
+			</div>
+
+			@* </section> *@
+
+		</div>
+
+
+	</div>
+
+	@* start *@
+	<div id="timesheet-detail-sec">
+		<div class="heading-div">
+			<h2 class="mbt-1 heading-2"><i class="fa fa-table alt"></i> Timesheet Details</h2>
+			<div class="align-right mbt-1">
+				<button class="button blue-btn btn-setting time-detail-back-btn"><i class="fa fa-arrow-left"></i> Back</button>
+			</div>
+		</div>
+		<div id="dvJiraList">
+			<div class="div-scroll">
+				<div class="table-design-div">
+					<table id="table-two" class="table-stripe resp-table table-view">
+						<thead>
+							<tr>
+								<th></th>
+								<th>Jira Id</th>
+								<th>WorkedDate</th>
+								<th>Description</th>
+								<th>minutesSpent</th>
+								<th>Addeddate</th>
+								<th>Added By</th>
+							</tr>
+						</thead>
+						<tbody id="table-2">
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	@* end *@
+
+
+
+	@* start *@
+	<div id="history-detail-sec">
+		<div class="heading-div">
+			<h2 class="mbt-1 heading-2"><i class="fa fa-table alt"></i> History </h2>
+			<div class="align-right mbt-1">
+				<button class="button blue-btn btn-setting time-detail-back-btn"><i class="fa fa-arrow-left"></i> Back</button>
+			</div>
+		</div>
+		<div id="dvTaskheetList">
+			<div class="div-scroll">
+				<div class="table-design-div">
+					<table id="table-three" class="table-stripe resp-table table-view">
+						<thead>
+							<tr>
+								<th></th>
+								<th>Jira Id</th>
+								@* <th>Task</th> *@
+								<th>Project Name</th>
+								<th>resources Name</th>
+								<th>Estimated Start Date</th>
+								<th>Estimated End Date</th>
+								<th>Estimated Hours</th>
+								<th>Actual Start Date</th>
+								<th>Actual End Date</th>
+								<th>Actual Hours</th>
+								<th>Modified By</th>
+							</tr>
+						</thead>
+						<tbody id="table-3">
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		@* end *@
+
+
+	</div>
+</div>
+
+
+<!-- view-detail-sec start -->
+<div class="view-detail-sec">
+	<div class="view-detail-bg">
+		<h3 class="mbt-1">
+			<span><i class="fa fa-eye"></i> View Details</span>
+			<span class="div-flex gap-1">
+
+				<button class="button blue-btn popup-edit-profile-btn"><i class="fa fa-pen"></i> Edit</button>
+				<a href="javascript:void(0)"><i class="fa fa-times"></i></a>
+
+
+			</span>
+		</h3>
+	</div>
+</div>
+<!-- view-detail-sec end -->
+<!-- right-slider start -->
+<!-- slide-profile-panel-div start -->
+<div class="slide-profile-panel-div nav-bar">
+	<ul>
+		<li><a href="javascript:void(0)" class="popup-myprofile-btn"><i class="fa fa-user ico round-bg"></i> My Profile</a></li>
+		<li><a href="javascript:void(0)"><i class="fa fa-cog ico round-bg"></i> Setting</a></li>
+		<li><a href="user-management.html"><i class="fa fa-cog ico round-bg"></i> User Management</a></li>
+		<li><a href="role-management.html"><i class="fa fa-cog ico round-bg"></i> Role Management</a></li>
+		<li><a href="javascript:void(0)"><i class="fa fa-lock ico round-bg"></i> Logout</a></li>
+	</ul>
+</div>
+<!-- slide-profile-panel-div end -->
+<!-- slide-setting-div start -->
+<div class="setting-div nav-bar">
+	<ul>
+		<li><a href="javascript:void(0)" class="btn-back-setting" id="back"><i class="fa fa-arrow-right ico round-bg"></i> Back</a></li>
+		@if (ViewBag.Edit != null && ViewBag.Edit)
+		{
+			<li><a href="javascript:void(0)" class="add-new-btn"><i class="fa fa-plus ico round-bg"></i> Create</a></li>
+		}
+
+
+
+
+	</ul>
+</div>
+<!-- slide-setting-div end -->
+<!-- slide-bulk-div start -->
+@* <div class="slide-bulk-div nav-bar">
+	<ul>
+		<li><a href="javascript:void(0)" class="btn-back-setting"><i class="fa fa-arrow-right ico round-bg"></i> Back</a></li>
+		@{
+			if (ViewBag != null && ViewBag.Delete)
+			{
+				<li><a href="javascript:void(0)" id="lnkbulkDelete"><i class="fa fa-trash ico round-bg"></i> Delete</a></li>
+			}
+		}
+		<li><a href="card-view.html"><i class="fa fa-id-card ico round-bg"></i> Card View</a></li>
+		@{
+			if (ViewBag != null && ViewBag.Import)
+			{
+				<li><a href="javascript:void(0)"><i class="fa fa-file-import ico round-bg"></i> Import</a></li>
+			}
+			if (ViewBag != null && ViewBag.Export)
+			{
+				<li><a href="javascript:void(0)"><i class="fa fa-file-export ico round-bg"></i> Export</a></li>
+			}
+		}
+
+		<li><a href="javascript:void(0)" class=""><i class="fa fa-code-branch ico round-bg"></i> Merge</a></li>
+		@{
+			if (ViewBag != null && ViewBag.MassUpdate)
+			{
+				<li><a href="javascript:void(0)"><i class="fa fa-pen ico round-bg"></i> Mass Update</a></li>
+			}
+		}
+		<li><a href="javascript:void(0)" class=""><i class="fa fa-plus ico round-bg"></i> Add To Target List</a></li>
+		<li><a href="javascript:void(0)" class=""><i class="fa fa-file-pdf ico round-bg"></i> Print As PDF</a></li>
+	</ul>
+</div> *@
+<!-- slide-bulk-div end -->
+<!-- slide-action-div start -->
+<div class="slide-action-div">
+	<div class="nav-bar">
+		<ul>
+			<li><a href="javascript:void(0)" class="btn-back-setting"><i class="fa fa-arrow-right ico round-bg"></i> Back</a></li>
+			@if (ViewBag.Edit != null && ViewBag.Edit)
+			{
+				<li><a href="javascript:void(0)" onclick="EditTasksheet(this)"><i class="fa fa-pen ico round-bg"></i> Edit</a></li>
+			}
+			@* <li><a href="javascript:void(0)" id="lnkDelete"><i class="fa fa-trash ico round-bg"></i> Delete</a></li> *@
+			<li><a href="javascript:void(0)" Jira-id="" id="btnJiraid" onclick="GetJiraIdRecord(this)"><i class="fa fa-pen ico round-bg"></i> TimeSheet</a></li>
+			<li><a href="javascript:void(0)" id="btnHistory" onclick="EditHistory(this)"><i class="fa fa-pen ico round-bg"></i> History</a></li>
+
+		</ul>
+	</div>
+</div>
+<!-- slide-action-div end -->
+<!-- right-slider end -->
+<!--Create User Form Start-->
+<div class="add-new-div popup-create-div">
+	<h3 class="mbt-1"><span><i class="fa fa-plus"></i>TaskSheet</span><a href="javascript:void(0)"><i class="fa fa-times"></i></a></h3>
+
+	<!-- overview-div start -->
+	<div class="overview-div">
+		<h4 class="heading-blue" id="Bannertop">
+			<span>
+				Form
+			</span>
+		</h4>
+		<div class="add-new-form gap-1 mbt-1 grid grid-col-4 tab-grid-col-4 mob-grid-col-1">
+			<div class="f-input-div filter-col">
+				<label>Jira Id</label>
+				<input type="text" class="f-input" id="txtJira" />
+			</div>
+			<div class="f-input-div filter-col">
+				<label>ProjectName</label>
+				<select class="f-input" name="ddProjectlst" id="ddProjectlst">
+					<option value="">Select Project</option>
+					<option value="Quantum Website">Quantum Website</option>
+					<option value="Invest Online">Invest Online</option>
+					<option value="QInvestMIS">QInvestMIS</option>
+					<option value="CRM">CRM</option>
+					<option value="EKYC">EKYC</option>
+					<option value="QConnect">QConnect</option>
+					<option value="QOpsReport">QOpsReport</option>
+					<option value="QOpsReport-Core">QOpsReport-Core</option>
+					<option value="Invest Online Mobile App">Invest Online Mobile App</option>
+					<option value="Other">Other</option>
+				</select>
+			</div>
+			@* 	<div class="f-input-div filter-col">
+			<label>Task</label>
+			<input type="text" class="f-input" id="txtTask" />
+			</div> *@
+			@* <div class="f-input-div filter-col">
+			<label>Remarks</label>
+			<input type="text" class="f-input" id="txtRemarks" />
+			</div> *@
+
+			<div class="f-input-div filter-col">
+				<label>Request From </label>
+				<input type="text" class="f-input" id="txtReqForm" />
+				@* <select class="f-input" name="ddbyname" id="txtReqForm">
+				</select> *@
+			</div>
+			<div class="f-input-div filter-col">
+				<label>Request Date </label>
+				<input type="text" class="f-input" id="txtReqFormdt" placeholder="yyyy-mm-dd" />
+			</div>
+		</div>
+
+		<div class="Est_div">
+			<div class="add-new-form gap-1 mbt-1 grid grid-col-4 tab-grid-col-4 mob-grid-col-1">
+				<div class="f-input-div filter-col">
+					<label>Estimated Plan Date </label>
+					<input type="text" class="f-input" id="txtEstPlanDt" placeholder="yyyy-mm-dd" />
+				</div>
+				<div class="f-input-div filter-col">
+					<label>Estimated Completion Date </label>
+					<input type="text" class="f-input" id="txtEstCompDt" placeholder="yyyy-mm-dd" />
+				</div>
+				<div class="f-input-div filter-col">
+					<label>Estimated Hours</label>
+					<input type="text" class="f-input" id="txtEsthrs" />
+				</div>
+				<div class="f-input-div filter-col">
+					<label>Status</label>
+					<select class="f-input" name="ddStatus" id="ddStatus">
+						<option value="">Select Status</option>
+						<option value="Yet To Start">Yet To Start</option>
+						<option value="In Progress">In Progress</option>
+						<option value="UAT">UAT</option>
+						<option value="Live">Live</option>
+						<option value="OnHold">OnHold</option>
+						<option value="Completed">Completed</option>
+					</select>
+				</div>
+			</div>
+		</div>
+
+		<div class="Add-div">
+			<div class="add-new-form gap-1 mbt-1 grid grid-col-4 tab-grid-col-4 mob-grid-col-1">
+				<div class="f-input-div filter-col">
+					<label>Actual Start Date </label>
+					<input type="text" class="f-input" id="txtActstartDt" placeholder="yyyy-mm-dd" />
+				</div>
+				<div class="f-input-div filter-col">
+					<label>Actual End Date </label>
+					<input type="text" class="f-input" id="txtActendDt" placeholder="yyyy-mm-dd" />
+				</div>
+				<div class="f-input-div filter-col">
+					<label>Actual Hours </label>
+					<input type="text" class="f-input" id="txtActhrs" />
+				</div>
+				<div class="f-input-div filter-col">
+					<label>Assigned To</label>
+					@* <input type="text" class="f-input" id="txtAssign" /> *@
+					<select class="f-input" name="txtAssign" id="txtAssign">
+					</select>
+				</div>
+			</div>
+
+		</div>
+		<div class="add-new-form gap-1 mbt-1 grid grid-col-1 tab-grid-col-1 mob-grid-col-1">
+
+
+			<div class="f-input-div filter-col">
+				<label>Description</label>
+				<textarea rows="3" class="f-input" id="txtdescription"></textarea>
+			</div>
+
+
+
+		</div>
+
+	</div>
+
+
+
+
+
+	<div class="other-div">
+		<div class="div-flex gap-1 justify-right pbt-1">
+			@if (ViewBag.Edit != null && ViewBag.Edit)
+			{
+				<button class="button blue-btn" id="btnSave" Jira-Id="" Timesheet-id="" onclick="validatetasksheet('create')"><i class="fa fa-save"></i> Save</button>
+			}
+			<button class="button blue-btn" id="btnCancel"><i class="fa fa-times"></i> Cancel</button>
+
+		</div>
+	</div>
+
+	<!-- other-div end -->
+</div>
+<!-- Create user Form End-->
+
+<input type="hidden" id="hdnTotalPageCount" />
+<input type="hidden" id="hdnCurrentPageIndex" />
+<input type="hidden" id="NextPageIndex" />
+
+
+
+
+@section Scripts {
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/js/jquery-ui.min.js"></script>
+	<link href="~/css/dtpicker.css" rel="stylesheet" />
+	<script src="~/js/jquery.datetimepicker.js"></script>
+	<script src="~/js/tasksheet.js"></script>
+}
+

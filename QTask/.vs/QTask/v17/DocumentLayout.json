@@ -1,0 +1,118 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Project\\Qtask\\QTask\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1AFC4BA2-1643-4F34-AB80-CC23B9544DA1}|QTaskDataLayer\\QTaskDataLayer.csproj|d:\\project\\qtask\\qtask\\qtaskdatalayer\\repository\\checkstatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AFC4BA2-1643-4F34-AB80-CC23B9544DA1}|QTaskDataLayer\\QTaskDataLayer.csproj|solutionrelative:qtaskdatalayer\\repository\\checkstatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97E0C21B-CCD9-408C-A49F-14352D032600}|QTask\\QTask.csproj|d:\\project\\qtask\\qtask\\qtask\\api\\checkstatusapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97E0C21B-CCD9-408C-A49F-14352D032600}|QTask\\QTask.csproj|solutionrelative:qtask\\api\\checkstatusapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97E0C21B-CCD9-408C-A49F-14352D032600}|QTask\\QTask.csproj|d:\\project\\qtask\\qtask\\qtask\\wwwroot\\js\\timesheet.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{97E0C21B-CCD9-408C-A49F-14352D032600}|QTask\\QTask.csproj|solutionrelative:qtask\\wwwroot\\js\\timesheet.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97E0C21B-CCD9-408C-A49F-14352D032600}|QTask\\QTask.csproj|d:\\project\\qtask\\qtask\\qtask\\wwwroot\\js\\checkstatus.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{97E0C21B-CCD9-408C-A49F-14352D032600}|QTask\\QTask.csproj|solutionrelative:qtask\\wwwroot\\js\\checkstatus.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97E0C21B-CCD9-408C-A49F-14352D032600}|QTask\\QTask.csproj|d:\\project\\qtask\\qtask\\qtask\\views\\checkstatus\\checkstatus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97E0C21B-CCD9-408C-A49F-14352D032600}|QTask\\QTask.csproj|solutionrelative:qtask\\views\\checkstatus\\checkstatus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97E0C21B-CCD9-408C-A49F-14352D032600}|QTask\\QTask.csproj|d:\\project\\qtask\\qtask\\qtask\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{97E0C21B-CCD9-408C-A49F-14352D032600}|QTask\\QTask.csproj|solutionrelative:qtask\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TimeSheet.js",
+              "DocumentMoniker": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\js\\TimeSheet.js",
+              "RelativeDocumentMoniker": "QTask\\wwwroot\\js\\TimeSheet.js",
+              "ToolTip": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\js\\TimeSheet.js",
+              "RelativeToolTip": "QTask\\wwwroot\\js\\TimeSheet.js",
+              "ViewState": "AQIAAGABAAAAAAAAAAAYwGgBAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-04T07:47:22.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CheckStatus.cshtml",
+              "DocumentMoniker": "D:\\Project\\Qtask\\QTask\\QTask\\Views\\CheckStatus\\CheckStatus.cshtml",
+              "RelativeDocumentMoniker": "QTask\\Views\\CheckStatus\\CheckStatus.cshtml",
+              "ToolTip": "D:\\Project\\Qtask\\QTask\\QTask\\Views\\CheckStatus\\CheckStatus.cshtml",
+              "RelativeToolTip": "QTask\\Views\\CheckStatus\\CheckStatus.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADEAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-04T07:44:08.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CheckStatus.js",
+              "DocumentMoniker": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\js\\CheckStatus.js",
+              "RelativeDocumentMoniker": "QTask\\wwwroot\\js\\CheckStatus.js",
+              "ToolTip": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\js\\CheckStatus.js",
+              "RelativeToolTip": "QTask\\wwwroot\\js\\CheckStatus.js",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAYwE4AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-04T07:43:58.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CheckStatusRepository.cs",
+              "DocumentMoniker": "D:\\Project\\Qtask\\QTask\\QTaskDataLayer\\Repository\\CheckStatusRepository.cs",
+              "RelativeDocumentMoniker": "QTaskDataLayer\\Repository\\CheckStatusRepository.cs",
+              "ToolTip": "D:\\Project\\Qtask\\QTask\\QTaskDataLayer\\Repository\\CheckStatusRepository.cs",
+              "RelativeToolTip": "QTaskDataLayer\\Repository\\CheckStatusRepository.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAQwCcAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T05:56:33.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CheckStatusAPIController.cs",
+              "DocumentMoniker": "D:\\Project\\Qtask\\QTask\\QTask\\API\\CheckStatusAPIController.cs",
+              "RelativeDocumentMoniker": "QTask\\API\\CheckStatusAPIController.cs",
+              "ToolTip": "D:\\Project\\Qtask\\QTask\\QTask\\API\\CheckStatusAPIController.cs",
+              "RelativeToolTip": "QTask\\API\\CheckStatusAPIController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T05:20:00.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Project\\Qtask\\QTask\\QTask\\appsettings.json",
+              "RelativeDocumentMoniker": "QTask\\appsettings.json",
+              "ToolTip": "D:\\Project\\Qtask\\QTask\\QTask\\appsettings.json",
+              "RelativeToolTip": "QTask\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-23T12:22:46.33Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+﻿@{
+	ViewData["Title"] = "TimeSheetDashboard";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="padder">
+	<div class="heading-div">
+		<h2 class="mbt-1 heading-2"><i class="fa fa-clock"></i>Timesheet</h2>
+		<div class="align-right mbt-1">
+			<button class="button blue-btn btn-setting"><i class="fa fa-plus"></i></button>
+		</div>
+	</div>
+
+
+	<div class="table-design-div">
+		<div class="filter-form gap-1 grid grid-col-4 tab-grid-col-2 mob-grid-col-1 pbt-1" id="header">
+
+
+			<div class="f-input-div filter-col">
+				<label> From Date</label>
+				<input type="text" class="f-input" id="txtfrmdate">
+			</div>
+
+			<div class="f-input-div filter-col">
+				<label>To Date</label>
+				<input type="text" class="f-input" id="txttodate">
+			</div>
+
+			<div class="f-input-div filter-col align-lbt">
+				<button id="btnSearch" class="blue-btn search">
+					<i class="fa fa-search"></i> Search
+				</button>
+			</div>
+		</div>
+
+
+		<div id="dvTimesheetList">
+			<div class="div-scroll">
+				<table id="table-one" class="table-stripe resp-table table-view">
+					<thead>
+						<tr>
+							<th></th>
+							<th>Jira Id</th>
+							<th>Estimated Completation Date </th>
+							<th>Estimated Hours </th>
+							<th>Actual End Date </th>
+							<th>Actual Hours</th>
+							<th>Spend Hours</th>
+
+							<th width="100">Actions</th>
+						</tr>
+					</thead>
+					<tbody id="table-1">
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+		 
+
+		<!-- view-detail-sec start -->
+		<div class="view-detail-sec">
+			<div class="view-detail-bg">
+				<h3 class="mbt-1">
+					<span><i class="fa fa-eye"></i> View Details</span>
+					<span class="div-flex gap-1">
+
+						<button class="button blue-btn popup-edit-profile-btn"><i class="fa fa-pen"></i> Edit</button>
+						<a href="javascript:void(0)"><i class="fa fa-times"></i></a>
+
+
+					</span>
+				</h3>
+			</div>
+		</div>
+		<!-- view-detail-sec end -->
+		<!-- right-slider start -->
+		<!-- slide-profile-panel-div start -->
+		<div class="slide-profile-panel-div nav-bar">
+			<ul>
+				<li><a href="javascript:void(0)" class="popup-myprofile-btn"><i class="fa fa-user ico round-bg"></i> My Profile</a></li>
+				<li><a href="javascript:void(0)"><i class="fa fa-cog ico round-bg"></i> Setting</a></li>
+				<li><a href="user-management.html"><i class="fa fa-cog ico round-bg"></i> User Management</a></li>
+				<li><a href="role-management.html"><i class="fa fa-cog ico round-bg"></i> Role Management</a></li>
+				<li><a href="javascript:void(0)"><i class="fa fa-lock ico round-bg"></i> Logout</a></li>
+			</ul>
+		</div>
+		<!-- slide-profile-panel-div end -->
+		<!-- slide-setting-div start -->
+		<div class="setting-div nav-bar">
+			<ul>
+				<li><a href="javascript:void(0)" class="btn-back-setting" id="back"><i class="fa fa-arrow-right ico round-bg"></i> Back</a></li>
+				@if (ViewBag.Edit != null && ViewBag.Edit)
+				{
+					<li><a href="javascript:void(0)" class="add-new-btn"><i class="fa fa-plus ico round-bg"></i> Create</a></li>
+				}
+
+
+
+
+			</ul>
+		</div>
+		<!-- slide-setting-div end -->
+		<!-- slide-action-div start -->
+		<div class="slide-action-div">
+			<div class="nav-bar">
+				<ul>
+					<li><a href="javascript:void(0)" class="btn-back-setting"><i class="fa fa-arrow-right ico round-bg"></i> Back</a></li>
+					@if (ViewBag.Edit != null && ViewBag.Edit)
+					{
+						<li><a href="javascript:void(0)" onclick="EditTasksheet(this)"><i class="fa fa-pen ico round-bg"></i> Edit</a></li>
+					}
+					@* <li><a href="javascript:void(0)" id="lnkDelete"><i class="fa fa-trash ico round-bg"></i> Delete</a></li> *@
+					<li><a href="javascript:void(0)" Jira-id="" id="btnJiraid" onclick="GetJiraIdRecord(this)"><i class="fa fa-pen ico round-bg"></i> TimeSheet</a></li>
+					<li><a href="javascript:void(0)" id="btnHistory" onclick="EditHistory(this)"><i class="fa fa-pen ico round-bg"></i> History</a></li>
+
+				</ul>
+			</div>
+		</div>
+		<!-- slide-action-div end -->
+		<!-- right-slider end -->
+
+
+
+	</div>
+
+	<!--<div>
+
+		<div class="workinprocess" id="noRecordTR" style="color:red">
+			<label>Work in process</label>
+		</div>
+	</div>-->
+</div>
+
+
+@section Scripts {
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/js/jquery-ui.min.js"></script>
+	<link href="~/css/dtpicker.css" rel="stylesheet" />
+	<script src="~/js/jquery.datetimepicker.js"></script>
+	<script src="~/js/timesheetdashboard.js"></script>
+}
+

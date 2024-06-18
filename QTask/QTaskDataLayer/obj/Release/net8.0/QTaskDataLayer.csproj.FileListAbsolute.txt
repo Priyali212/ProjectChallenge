@@ -1,0 +1,12 @@
+D:\D\Menuka\Project\QTask\QTask\QTaskDataLayer\bin\Release\net8.0\QTaskDataLayer.deps.json
+D:\D\Menuka\Project\QTask\QTask\QTaskDataLayer\bin\Release\net8.0\QTaskDataLayer.dll
+D:\D\Menuka\Project\QTask\QTask\QTaskDataLayer\bin\Release\net8.0\QTaskDataLayer.pdb
+D:\D\Menuka\Project\QTask\QTask\QTaskDataLayer\obj\Release\net8.0\QTaskDataLayer.csproj.AssemblyReference.cache
+D:\D\Menuka\Project\QTask\QTask\QTaskDataLayer\obj\Release\net8.0\QTaskDataLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\D\Menuka\Project\QTask\QTask\QTaskDataLayer\obj\Release\net8.0\QTaskDataLayer.AssemblyInfoInputs.cache
+D:\D\Menuka\Project\QTask\QTask\QTaskDataLayer\obj\Release\net8.0\QTaskDataLayer.AssemblyInfo.cs
+D:\D\Menuka\Project\QTask\QTask\QTaskDataLayer\obj\Release\net8.0\QTaskDataLayer.csproj.CoreCompileInputs.cache
+D:\D\Menuka\Project\QTask\QTask\QTaskDataLayer\obj\Release\net8.0\QTaskDataLayer.dll
+D:\D\Menuka\Project\QTask\QTask\QTaskDataLayer\obj\Release\net8.0\refint\QTaskDataLayer.dll
+D:\D\Menuka\Project\QTask\QTask\QTaskDataLayer\obj\Release\net8.0\QTaskDataLayer.pdb
+D:\D\Menuka\Project\QTask\QTask\QTaskDataLayer\obj\Release\net8.0\ref\QTaskDataLayer.dll

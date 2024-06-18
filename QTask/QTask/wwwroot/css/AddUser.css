@@ -1,0 +1,7 @@
+﻿.user-form {display: block;width: 90%;background-color: #fff;border: 1px solid #ddd;box-shadow: 0px 1px 6px -1px #ccc;padding: 30px 10px;border-radius: 1rem;margin: auto;}
+.user-form h1{text-align:center;color:#00adef;}
+.user-form ul{display:flex;flex-direction:row;flex-wrap:wrap;}
+.user-form ul li{min-width:49%;padding:20px;}
+.user-form ul li label{padding:10px;cursor:pointer;}
+.user-form ul li label input{margin-right:10px;}
+.button-container{display:block;text-align:center;}

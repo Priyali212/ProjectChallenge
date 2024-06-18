@@ -1,0 +1,77 @@
+﻿@{
+	ViewData["Title"] = "GenerateReport";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="padder">
+	<div class="heading-div">
+		<h2 class="mbt-1 heading-2"><i class="fa fa-file-download"></i>Generate Report</h2>
+		<div class="align-right mbt-1">
+			<button class="button blue-btn btn-setting"><i class="fa fa-plus"></i></button>
+		</div>
+	</div>
+
+	<div class="table-design-div">
+		<div class="filter-form gap-1 grid grid-col-3 tab-grid-col-2 mob-grid-col-1 pbt-1">
+			<div class="f-input-div filter-col">
+				<label> Resource Name</label>
+				
+				<select class="f-input" name="ddbyname" id="txtByResName">
+					
+				</select>
+			</div>
+			<div class="f-input-div filter-col">
+				<label>From Date</label>
+				<input type="text" class="f-input" id="txtFrmdt">
+			</div>
+			<div class="f-input-div filter-col">
+				<label>To Date</label>
+				<input type="text" class="f-input" id="txtTodt">
+			</div>
+		</div>
+
+  <div class="other-div">
+				<div class="div-flex gap-1 justify-left pbt-1">
+				
+				<button id="btnSearch" class="blue-btn search">
+					<i class="fa fa-search">Search</i>
+				</button>
+				<button id="btnDownload" class="blue-btn search">
+					<i class="fa fa-cloud-download-alt">Download</i>
+				</button>
+				<img src="~/images/loading.gif" id="ImgUploadExcel" style="display: none" />
+				</div>
+
+			</div>
+			<div>&nbsp;</div>
+
+	<div id="dvGenerateList">
+		<div>
+			<table id="table-one" class="table-stripe resp-table table-view">
+				<thead>
+					<tr>
+						@* <th></th> *@
+						<th>Resource Name</th>
+						<th>Total Ticket</th>
+						<th>Open</th>
+						<th>Closed</th>
+						
+					</tr>
+				</thead>
+				<tbody id="table-1">
+				</tbody>
+			</table>
+		</div>
+	</div>
+	</div>
+</div>
+
+
+@section Scripts {
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/js/jquery-ui.min.js"></script>
+	<link href="~/css/dtpicker.css" rel="stylesheet" />
+	<script src="~/js/jquery.datetimepicker.js"></script>
+   <script src="~/js/generatereport.js"></script>
+}

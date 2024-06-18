@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\QTask.props" />
+</Project>

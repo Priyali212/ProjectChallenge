@@ -1,0 +1,53 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en" class="height-100">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link href="~/css/site.css" rel="stylesheet" />
+    <title>QTask Login</title>
+</head>
+<body class="login-page-body height-100">
+
+    <!-- login-sec start -->
+    <div class="login-sec">
+        <div class="logo-div">
+            <img src="~/images/rec-logo.png">
+        </div>
+        <div class="login-form-div">
+            <h2><span><i class="fa fa-sign-in-alt"></i> Login</span></h2>
+            <div class="f-input-div filter-col">
+                <label>User Id</label>
+                <input type="text" id="txtUserName" class="f-input">
+            </div>
+            <div class="f-input-div filter-col">
+                <label>Password</label>
+                <input type="password" id="txtPassword" class="f-input">
+                <div class="align-right">
+                    <a href="forgot-password.html"><small><b>Forgot Password?</b></small> </a>
+                </div>
+            </div>
+            <div class="login-btn-div">
+                <button class="button blue-btn btn-login" id="btnLogin"><i class="fa fa-sign-in-alt"></i> Login</button>
+            </div>
+        </div>
+    </div>
+    <!-- login-sec end -->
+    <!--Modal start-->
+    <div id="concurrent-modal" class="modal">
+        <p>You have already logged in, Do you want to continue with current login?</p>
+        <a href="#" id="btnForceLogin" rel="modal:close">Yes</a>
+    </div>
+    <!--Modal end-->
+    <!-- js start -->
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="~/js/common.js"></script>
+    <script src="~/js/Login.js"></script>
+</body>
+</html>

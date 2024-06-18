@@ -1,0 +1,152 @@
+﻿@{
+    ViewData["Title"] = "Timesheet";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@* <div class="main-content-div">
+
+    <!-- popup-edit-profile-div start -->
+    <div class="popup-edit-profile-div">
+        <h3 class="mbt-1">
+            <span><i class="fa fa-user"></i> My Profile</span>
+            <a href="javascript:void(0)"><i class="fa fa-times"></i></a>
+        </h3>
+
+        <div class="view-myprofile-div">
+        </div>
+    </div>
+
+</div> *@
+<div class="padder">
+    <div class="heading-div">
+        <h2 class="mbt-1 heading-2"><i class="fa fa-clock"></i>Timesheet</h2>
+        @* <div class="align-right mbt-1">
+        <button class="button blue-btn btn-setting"><i class="fa fa-plus"></i></button>
+        </div> *@
+    </div>
+
+    <div class="time popup-create-div" id="TimeSheet">
+        <!-- overview-div start -->
+        <div class="overview-div">
+            @* <h4 class="heading-blue">
+            <span>
+            Overview
+            </span>
+            </h4> *@
+
+            <div class="add-new-form gap-1 mbt-1 grid grid-col-3 tab-grid-col-2 mob-grid-col-1">
+                <div class="f-input-div filter-col">
+                    <label>Jira Id</label>
+                    <input type="text" class="f-input" id="txtJiraId">
+                </div>
+                <div class="f-input-div filter-col">
+                    <div class="div-flex gap-1">
+                        <div class="flex-1">
+                            <label>Select Date</label>
+                            <input type="text" class="f-input" id="txtSelectDate">
+                        </div>
+                        <div class="flex-1">
+                            <label>Time in Min</label>
+                            <input type="text" class="f-input" id="txtSpend">
+                        </div>
+                    </div>
+                </div>
+                <div class="f-input-div filter-col">
+                    <div class="div-flex gap-1">
+                        <div class="flex-1">
+                            <label>Description</label>
+                            <input type="text" class="f-input" id="txtDesc">
+                        </div>
+                        <div>
+                            <label>&nbsp;</label>
+                            @if (ViewBag.Edit != null && ViewBag.Edit)
+                            {
+                                <button class="button blue-btn" id="btnSave" onclick="ValidateTimeSheetDetails('create')"><i class="fa fa-save"></i> Save</button>
+                            }
+                        </div>
+                    </div>
+                </div>
+
+
+                @* <div class="f-input-div filter-col">
+                <label>Total Hours</label>
+                <input type="text" class="f-input" id="txttimhrs">
+                </div> *@
+
+            </div>
+        </div>
+    </div>
+
+    <div class="other-div">
+        <div class="div-flex gap-1 justify-right pbt-1">
+
+            @* <button class="button blue-btn" id="btnSave" onclick="ValidateTimeSheetDetails" TimeSheetId=""><i class="fa fa-save"></i> Save</button> *@
+            @* <button class="button blue-btn" id="btnCancel"><i class="fa fa-times"></i> Cancel</button> *@
+        </div>
+    </div>
+
+    <div id="dvTimesheetList">
+        <div>
+            <div class="table-design-div timesheet-table-div">
+                <table class="table-stripe resp-table table-view">
+                    <thead>
+                        <tr>
+                            <th width="60"></th>
+                            <th>Jira Id</th>
+                            <th>Task</th>
+                            <th class="col-date-wid">Select Date</th>
+                            <th class="col-time-wid">Time in Min</th>
+                            <th>Description</th>
+                            <th width="100">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                    <tfoot>
+                        @* <tr>
+                        <td colspan="3" class="align-right">Total</td>
+                        <td colspan="3"><span id="totalHr"></span></td>
+                        </tr> *@
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="divPagination" class="pagination">
+    </div>
+    <div id="divPageDropdown" class="page-dropdown">
+        <select id="ddlPageList" name="ddlPageList" class="page-option getinthenews_page-option"></select>
+        @* <ul id="ddlPageList"></ul> *@
+    </div>
+
+    <!-- other-div end -->
+</div>
+<!-- slide-setting-div start -->
+<div class="setting-div nav-bar">
+    <ul>
+        <li><a href="javascript:void(0)" class="btn-back-setting"><i class="fa fa-arrow-right ico round-bg"></i> Back</a></li>
+        <li><a href="javascript:void(0)" class="popup-filter-btn"><i class="fa fa-filter ico round-bg"></i> Filter</a></li>
+        <li><a href="javascript:void(0)" class="popup-approve-btn"><i class="fa fa-check ico round-bg"></i> Approve</a></li>
+        @if (ViewBag.Edit != null && ViewBag.Edit)
+        {
+            <li><a href="javascript:void(0)" class="add-new-btn"><i class="fa fa-plus ico round-bg"></i> Create</a></li>
+        }
+        @if (ViewBag.Delete != null && ViewBag.Delete)
+        {
+            <li><a href="javascript:void(0)"><i class="fa fa-trash ico round-bg"></i> Delete</a></li>
+        }
+    </ul>
+</div>
+
+
+<input type="hidden" id="hdnTotalPageCount" />
+<input type="hidden" id="hdnCurrentPageIndex" />
+<input type="hidden" id="NextPageIndex" />
+<!-- slide-setting-div end -->
+@section Scripts {
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/jquery-ui.min.js"></script>
+    <link href="~/css/dtpicker.css" rel="stylesheet" />
+    <script src="~/js/jquery.datetimepicker.js"></script>
+    <script src="~/js/timesheet.js"></script>
+}

@@ -1,0 +1,130 @@
+﻿@model QTask.Models.ContactListModel;
+
+
+<div>
+    <div class="action-div">
+        <div class="form-group-div">
+            <input type="checkbox" id="checkAll">
+            @if(Model!=null)
+            {
+                if (Model.PageIndex <= 1)
+                {
+                    <button class="prev" disabled="disabled">&lt;</button>
+                    <button class="first" disabled="disabled">&lt;&lt;</button>
+                }
+                else
+                {
+                    <button class="prev">&lt;</button>
+                    <button class="first">&lt;&lt;</button>
+                }
+                <div>
+                    <span class="pg-no" page-id="@Html.Raw(Model.PageIndex)">@Html.Raw((((Model.PageIndex-1)*20)+1).ToString())</span> - <span>
+                        @Html.Raw((Model.PageIndex*20)>Model.TotalCount ?Model.TotalCount : (Model.PageIndex*20))
+                    </span> of <span class="pg-total">@Html.Raw(Model.TotalCount.ToString())</span>
+                </div>
+
+                if (((Convert.ToInt32(Model.TotalCount.ToString()) % 20) == 0 && (Convert.ToInt32(Model.TotalCount.ToString()) / 20 > Model.PageIndex)) || ((Convert.ToInt32(Model.TotalCount.ToString()) % 20) != 0 && (Convert.ToInt32(Model.TotalCount.ToString()) / 20 >= Model.PageIndex)))
+                {
+                    <button class="next">&gt;</button>
+                    <button class="last">&gt;&gt;</button>
+                }
+                else
+                {
+                    <button class="next" disabled="disabled">&gt;</button>
+                    <button class="last" disabled="disabled">&gt;&gt;</button>
+                }
+            
+            }
+            else
+            {
+                <button disabled="disabled">&lt;</button>
+                <button disabled="disabled">&lt;&lt;</button>
+                <div><span>0</span> - <span>0</span> of <span>0</span></div>
+            <button disabled="disabled" >&gt;</button>
+                <button disabled="disabled">&gt;&gt;</button>
+            }
+            
+        </div>
+        <div class="form-group-div">
+            <button class="bulk-btn" title="Bulk Action"><i class="fa fa-tasks"></i></button>
+        </div>
+    </div>
+
+    <table id="table-one" class="table-stripe resp-table table-view">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>User Id</th>
+                <th>Group Name</th>
+                <th>IsAdmin</th>
+                <th width="100">Actions</th>
+            </tr>
+        </thead>
+        <tbody id="table-1">
+            @{
+                if (Model != null)
+                {
+                    foreach (var objContactList in Model.contactLists)
+                    {
+                        <tr>
+                            <td><input type="checkbox" value="@Html.Raw(objContactList.ID)"></td>
+                            <td data-th="Name">@Html.Raw(objContactList.UserFullName)</td>
+                            <td data-th="User Id">@Html.Raw(objContactList.UserName)</td>
+                            <td data-th="Group Name">@Html.Raw(objContactList.IsAdmin)</td>
+                            <td data-th="IsAdmin">@Html.Raw(objContactList.GroupName)</td>
+                            <!--<td data-th="Salary">$920800</td>-->
+                            <td data-th="Action" class="td-btn-align"><button class="blue-btn slide-action-btn"><i class="fa fa-cog"></i></button></td>
+                        </tr>
+                    }
+                }
+            }
+        </tbody>
+    </table>
+
+    <div class="action-div">
+        <div class="form-group-div">
+            <input type="checkbox" id="checkAll">
+            @if (Model != null)
+            {
+                if (Model.PageIndex <= 2)
+                {
+                    <button class="prev" disabled="disabled">&lt;</button>
+                    <button class="first" disabled="disabled">&lt;&lt;</button>
+                }
+                else
+                {
+                    <button class="prev">&lt;</button>
+                    <button class="first">&lt;&lt;</button>
+                }
+                <div>
+                    <span class="pg-no" page-id="@Html.Raw(Model.PageIndex)">@Html.Raw((((Model.PageIndex-1)*20)+1).ToString())</span> - <span>
+                        @Html.Raw((Model.PageIndex*20)>Model.TotalCount ?Model.TotalCount : (Model.PageIndex*20))
+                    </span> of <span class="pg-total">@Html.Raw(Model.TotalCount.ToString())</span>
+                </div>
+
+                if (((Convert.ToInt32(Model.TotalCount.ToString()) % 20) == 0 && (Convert.ToInt32(Model.TotalCount.ToString()) / 20 > Model.PageIndex)) || ((Convert.ToInt32(Model.TotalCount.ToString()) % 20) != 0 && (Convert.ToInt32(Model.TotalCount.ToString()) / 20 >= Model.PageIndex)))
+                {
+                    <button class="next">&gt;</button>
+                    <button class="last">&gt;&gt;</button>
+                }
+                else
+                {
+                    <button class="next" disabled="disabled">&gt;</button>
+                    <button class="last" disabled="disabled">&gt;&gt;</button>
+                }
+            }
+            else
+            {
+                <button class="prev" disabled="disabled">&lt;</button>
+                <button class="first" disabled="disabled">&lt;&lt;</button>
+                    <div><span>0</span> - <span>0</span> of <span>0</span></div>
+                <button disabled="disabled" >&gt;</button>
+                    <button disabled="disabled">&gt;&gt;</button>
+            }
+        </div>
+        <div class="form-group-div">
+            <button class="bulk-btn" title="Bulk Action"><i class="fa fa-tasks"></i></button>
+        </div>
+    </div>
+</div>

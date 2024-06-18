@@ -1,0 +1,192 @@
+﻿@{
+    ViewData["Title"] = "Module";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- main-content-div start -->
+<div class="main-content-div">
+    @{
+        if ((Context.Items["edit"] != null && Context.Items["edit"].ToString().Trim() != "" && Convert.ToInt32(Context.Items["edit"].ToString().Trim()) == 1) || Context.Session.GetInt32("IsAdmin") == 1)
+        {
+            <!-- popup-add-role-div start -->
+            <div class="popup-add-role-div">
+                <div class="create-role-div">
+                    <h3 class="mbt-1">
+                        <span>
+                            <i class="fa fa-plus"></i> Create Module
+                        </span> <a href="javascript:void(0)"><i class="fa fa-times"></i></a>
+                    </h3>
+                    <div class="create-role-form-div">
+
+                        <div class="form-input-div mbt-1">
+                            <label>Name</label>
+                            <input type="text" class="f-input" id="txtModuleName">
+                        </div>
+
+                        <div class="div-flex gap-1 justify-right">
+                            <button id="btnModuleSave" class="button blue-btn"><i class="fa fa-save"></i> Save</button>
+                            <button class="button blue-btn"><i class="fa fa-times"></i> Cancel</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- popup-add-role-div end -->
+        }
+    }
+
+
+    <div class="padder">
+        <div class="heading-div">
+            <h2 class="mbt-1 heading-2"><i class="fa fa-tasks"></i> Modules</h2>
+            @{
+                if ((Context.Items["edit"] != null && Context.Items["edit"].ToString().Trim() != "" && Convert.ToInt32(Context.Items["edit"].ToString().Trim()) == 1) || Context.Session.GetInt32("IsAdmin") == 1)
+                {
+                    <div class="align-right mbt-1">
+                        <button class="button blue-btn btn-slide-add-role-div"><i class="fa fa-plus"></i></button>
+                        <!-- <button class="button red-btn" id="delete" disabled><i class="fa fa-trash"></i> Delete</button> -->
+                    </div>
+                }
+            }
+        </div>
+        <div class="table-design-div">
+            <!-- overlay start -->
+            <div class="overlay"></div>
+            <!-- overlay start -->
+            <!-- search-role-sec start -->
+            <div class="search-role-sec">
+                <div class="mbt-1">
+                   <!-- <div class="search-role-input-div mbt-1">
+                        <div class="f-input-div">
+                            <label>Name</label>
+                            <div class="div-flex gap-1">
+                                <div class="input-div">
+                                    <input type="text" id="txtKeyword" class="f-input">
+                                </div>
+                                <div class="btn-div">
+                                    <button id="btnSearch" class="button blue-btn"><i class="fa fa-search"></i> Search</button>
+                                    <button class="button blue-btn"><i class="fa fa-times"></i> Cancel</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>-->
+                </div>
+                <!-- <div class="action-div">
+                     <div class="form-group-div">
+                         <input type="checkbox" id="checkAll">
+                         <div><span>1</span> - <span>20</span> of <span>200</span></div>
+                         <button>&gt;</button>
+                         <button>&gt;&gt;</button>
+                     </div>
+                     <div class="form-group-div">
+                         <button class="bulk-btn" title="Bulk Action"><i class="fa fa-tasks"></i></button>
+                     </div>
+                 </div>-->
+
+                <table id="tbl-Category" class="table-stripe resp-table table-view">
+                    <thead>
+                        <tr>
+                            <th width="40"></th>
+                            <th>Name</th>
+                            <!--<th>Description</th>-->
+                            <th width="80">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <!--<div class="action-div">
+                    <div class="form-group-div">
+                        <input type="checkbox" id="checkAll">
+                        <div>(<span>1</span> - <span>20</span> of <span>200</span>)</div>
+                        <button>&gt;</button>
+                        <button>&gt;&gt;</button>
+                    </div>
+                    <div class="form-group-div">
+                        <button class="bulk-btn" title="Bulk Action"><i class="fa fa-tasks"></i></button>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    @{
+        if ((Context.Items["edit"] != null && Context.Items["edit"].ToString().Trim() != "" && Convert.ToInt32(Context.Items["edit"].ToString().Trim()) == 1) || Context.Session.GetInt32("IsAdmin") == 1)
+        {
+            <!-- slide-add-role-div start -->
+            <div class="slide-add-role-div nav-bar">
+                <ul>
+                    <li><a href="javascript:void(0)" class="btn-back-setting"><i class="fa fa-arrow-right ico round-bg"></i> Back</a></li>
+                    <li><a href="javascript:void(0)" class="btn-popup-add-banner-div"><i class="fa fa-plus ico round-bg"></i> Create</a></li>
+                </ul>
+            </div>
+            <!-- slide-add-role-div end -->
+        }
+    }
+</div>
+<!-- main-content-div end -->
+<!-- slide-role-setting-div start -->
+<div class="slide-role-setting-div">
+    <div class="nav-bar">
+        <ul>
+            @{
+                <li><a href="javascript:void(0)" class="btn-back-setting"><i class="fa fa-arrow-right ico round-bg"></i> Back</a></li>
+                if ((Context.Items["edit"] != null && Context.Items["edit"].ToString().Trim() != "" && Convert.ToInt32(Context.Items["edit"].ToString().Trim()) == 1) || Context.Session.GetInt32("IsAdmin") == 1)
+                {
+                    // <li><a href="javascript:void(0)" class="btn-popup-edit-role-div"><i class="fa fa-pen ico round-bg"></i> Edit</a></li>
+                }
+                <li><a href="javascript:void(0)" class="btn-popup-role-access-div"><i class="fa fa-link ico round-bg"></i> Role Access</a></li>
+                if ((Context.Items["delete"] != null && Context.Items["delete"].ToString().Trim() != "" && Convert.ToInt32(Context.Items["delete"].ToString().Trim()) == 1) || Context.Session.GetInt32("IsAdmin") == 1)
+                {
+                    <li><a href="javascript:void(0)" id="lnkDelete"><i class="fa fa-trash ico round-bg"></i> Delete</a></li>
+                }
+            }
+
+        </ul>
+    </div>
+</div>
+<!-- slide-role-setting-div end -->
+<!-- slide-bulk-div start -->
+<div class="slide-bulk-div nav-bar">
+    <ul>
+        <li><a href="javascript:void(0)" class="btn-back-setting"><i class="fa fa-arrow-right ico round-bg"></i> Back</a></li>
+        @{
+            if ((Context.Items["delete"] != null && Context.Items["delete"].ToString().Trim() != "" && Convert.ToInt32(Context.Items["delete"].ToString().Trim()) == 1) || Context.Session.GetInt32("IsAdmin") == 1)
+            {
+                <li><a href="javascript:void(0)"><i class="fa fa-trash ico round-bg"></i> Delete</a></li>
+            }
+            <li><a href="card-view.html"><i class="fa fa-id-card ico round-bg"></i> Card View</a></li>
+            if ((Context.Items["import"] != null && Context.Items["import"].ToString().Trim() != "" && Convert.ToInt32(Context.Items["import"].ToString().Trim()) == 1) || Context.Session.GetInt32("IsAdmin") == 1)
+            {
+                <li><a href="javascript:void(0)"><i class="fa fa-file-import ico round-bg"></i> Import</a></li>
+            }
+            if ((Context.Items["export"] != null && Context.Items["export"].ToString().Trim() != "" && Convert.ToInt32(Context.Items["export"].ToString().Trim()) == 1) || Context.Session.GetInt32("IsAdmin") == 1)
+            {
+                <li><a href="javascript:void(0)"><i class="fa fa-file-export ico round-bg"></i> Export</a></li>
+            }
+            <li><a href="javascript:void(0)" class=""><i class="fa fa-code-branch ico round-bg"></i> Merge</a></li>
+            if ((Context.Items["massupdate"] != null && Context.Items["massupdate"].ToString().Trim() != "" && Convert.ToInt32(Context.Items["massupdate"].ToString().Trim()) == 1) || Context.Session.GetInt32("IsAdmin") == 1)
+            {
+                <li><a href="javascript:void(0)"><i class="fa fa-pen ico round-bg"></i> Mass Update</a></li>
+            }
+            <li><a href="javascript:void(0)" class=""><i class="fa fa-plus ico round-bg"></i> Add To Target List</a></li>
+            <li><a href="javascript:void(0)" class=""><i class="fa fa-file-pdf ico round-bg"></i> Print As PDF</a></li>
+        }
+    </ul>
+</div>
+<!-- slide-bulk-div end -->
+<!-- slide-action-div start -->
+<div class="slide-action-div">
+    <div class="nav-bar">
+        <ul>
+            <li><a href="javascript:void(0)" class="btn-back-setting"><i class="fa fa-arrow-right ico round-bg"></i> Back</a></li>
+            <li><a href="javascript:void(0)"><i class="fa fa-pen ico round-bg"></i> Edit</a></li>
+            <li><a href="javascript:void(0)"><i class="fa fa-trash ico round-bg"></i> Delete</a></li>
+        </ul>
+    </div>
+</div>
+<!-- slide-action-div end -->
+@section Scripts {
+    <script src="~/js/Module.js"></script>
+}

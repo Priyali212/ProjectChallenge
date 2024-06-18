@@ -1,0 +1,82 @@
+﻿@model List<QTask.Models.RolesModel>
+
+
+    <!-- overlay start -->
+    <div class="overlay"></div>
+    <!-- overlay start -->
+    <!-- search-role-sec start -->
+    <div class="search-role-sec">
+        <div class="mbt-1">
+            <div class="search-role-input-div mbt-1">
+                <div class="f-input-div">
+                    <label>Name</label>
+                    <div class="div-flex gap-1">
+                        <div class="input-div">
+                            <input type="text" class="f-input">
+                        </div>
+                        <div class="btn-div">
+                            <button class="button blue-btn"><i class="fa fa-search"></i> Search</button>
+                            <button class="button blue-btn"><i class="fa fa-times"></i> Cancel</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="action-div">
+            <div class="form-group-div">
+                <input type="checkbox" id="checkAll">
+                <div><span>1</span> - <span>20</span> of <span>200</span></div>
+                <button>&gt;</button>
+                <button>&gt;&gt;</button>
+            </div>
+            <div class="form-group-div">
+                <button class="bulk-btn" title="Bulk Action"><i class="fa fa-tasks"></i></button>
+            </div>
+        </div>
+
+        <table class="table-stripe resp-table table-view">
+            <thead>
+                <tr>
+                    <th width="40"></th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th width="80">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    if (Model != null)
+                    {
+                        foreach (RolesModel objRoles in Model)
+                        {
+                            //if (objRoles.Deleted == false)
+                            //{
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" role-id="@Html.Raw(objRoles.RolesId)">
+                                    </td>
+                                    <td data-th="Name">@Html.Raw(objRoles.RoleName)</td>
+                                    <td data-th="Description">@Html.Raw(objRoles.RoleDescriptioin)</td>
+                                    <td data-th="Actions" class="td-btn-align"><button class="button blue-btn btn-slide-role-setting-div"><i class="fa fa-cog"></i></button></td>
+                                </tr>
+                            //}
+                        }
+                    }
+                }
+
+            </tbody>
+        </table>
+        <div class="action-div">
+            <div class="form-group-div">
+                <input type="checkbox" id="checkAll">
+                <div>(<span>1</span> - <span>20</span> of <span>200</span>)</div>
+                <button>&gt;</button>
+                <button>&gt;&gt;</button>
+            </div>
+            <div class="form-group-div">
+                <button class="bulk-btn" title="Bulk Action"><i class="fa fa-tasks"></i></button>
+            </div>
+        </div>
+    </div>

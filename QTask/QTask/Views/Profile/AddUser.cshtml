@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewData["Title"] = "AddUser";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/css/adduser.css" rel="stylesheet" />
+<div class="user-form">
+<h1>Add User</h1>
+<fieldset>
+    <ul>
+        <li>
+            <p>First Name</p> 
+            <input type="text" id="txtFirstName" class="form-control" maxlength="50" />
+        </li>
+        <li>
+            <p>Last Name</p>
+            <input type="text" id="txtLastName" class="form-control" maxlength="50" />
+        </li>
+        <li>
+            <p>Email Id</p> 
+            <input type="text" id="txtEmailId" class="form-control" maxlength="50" />
+        </li>
+        <li>
+            <p>Mobile No</p>
+            <input type="text" id="txtMobileNo" class="form-control" maxlength="10" />
+        </li>
+        <li>
+            <p>Status</p>
+            <div>
+                <label><input type="radio" name="userStatus" value="1" />Active</label>
+                <label><input type="radio" name="userStatus" value="0" />In-Active</label>
+            </div>
+        </li>
+        <li>
+            <p>Reporting Person</p>
+            <input type="text" id="txtReportingPerson" class="form-control" />
+        </li>
+        <li>
+            <p>Admin Role</p>
+            <label><input type="checkbox" value="1" />Admin </label>
+            <label><input type="checkbox" value="1" />Sub Admin </label>
+        </li>
+    </ul>
+</fieldset>
+<fieldset>
+    <div class="button-container">
+        <button type="button" class="btn btn-primary">Add User</button>
+    </div>
+</fieldset>
+</div>

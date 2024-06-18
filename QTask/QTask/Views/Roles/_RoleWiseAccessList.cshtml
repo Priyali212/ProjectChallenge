@@ -1,0 +1,179 @@
+﻿@using System.Xml;
+@using System.Text.RegularExpressions;
+@{
+    XmlDocument Xdoc = (XmlDocument)ViewBag.RolesAccessData;
+    string RoleId = string.Empty;
+    RoleId = ViewBag.RoleId;
+    string[] AccessTypes = new string[] { "Access", "Delete", "Edit", "Export", "Import", "List", "Mass Update", "View" };
+}
+<div class="role-access-div" id="Div-Role-Table" role-id="@Html.Raw(RoleId)">
+    <h3 class="mbt-1">
+        <span><i class="fa fa-link"></i> Access</span>
+        <div class="div-flex gap-1">
+            <button class="button blue-btn btn-edit-access-select-dropdown"><i class="fa fa-pen"></i> Edit</button>
+            <a href="javascript:void(0)"><i class="fa fa-times"></i></a>
+        </div>
+    </h3>
+    <div class="table-design-div mbt-1">
+        <table id="table-access" class="table-stripe resp-table table-view">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Access</th>
+                    <th>Delete</th>
+                    <th>Edit</th>
+                    <th>Export</th>
+                    <th>Import</th>
+                    <th>List</th>
+                    <th>Mass Update</th>
+                    <th>View</th>
+                    @* @{
+                    XmlNodeList nodeNameList = Xdoc.GetElementsByTagName("Names");
+                    if (nodeNameList.Count > 0)
+                    {
+                    foreach (XmlNode node in nodeNameList)
+                    {
+                    var lowerCase = node.InnerText.ToLower();
+                    var r = new Regex(@"(^[a-z])|\.\s+(.)", RegexOptions.ExplicitCapture);
+                    <th>@Html.Raw(r.Replace(lowerCase, s => s.Value.ToUpper()))</th>
+                    }
+                    }
+                    else
+                    {
+                    <th>Access</th>
+                    <th>Delete</th>
+                    <th>Edit</th>
+                    <th>Export</th>
+                    <th>Import</th>
+                    <th>List</th>
+                    <th>Mass Update</th>
+                    <th>View</th>
+                    }
+                    }*@
+
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    XmlNodeList nodeCategoryList = Xdoc.GetElementsByTagName("Category");
+                    if (nodeCategoryList.Count > 0)
+                    {
+                        foreach (XmlNode nodeCategory in nodeCategoryList)
+                        {
+                            string Category = nodeCategory.InnerText;
+                            var lowerCase = Category.Replace("_", " ").ToLower();
+                            var r = new Regex(@"(^[a-z])|\.\s+(.)", RegexOptions.ExplicitCapture);
+
+                            <tr>
+                                <th cat="@Html.Raw(Category)">@Html.Raw(r.Replace(lowerCase, s => s.Value.ToUpper()))</th>
+                                @{
+                                    XmlNodeList nodeRoleWiseAccess = Xdoc.GetElementsByTagName(Category);
+
+                                    foreach (string CurrentAccessType in AccessTypes)
+                                    {
+                                        string CurrentAccessId = "-1";
+                                        XmlNodeList nodeRoleWiseAccessChild = null;
+                                        if (nodeRoleWiseAccess != null && nodeRoleWiseAccess.Count > 0)
+                                        {
+                                            nodeRoleWiseAccessChild = nodeRoleWiseAccess[0].SelectNodes(CurrentAccessType.Replace(" ", "").ToLower());
+                                            if (nodeRoleWiseAccessChild != null && nodeRoleWiseAccessChild.Count > 0)
+                                            {
+                                                CurrentAccessId = nodeRoleWiseAccessChild[0].Attributes["AccessId"].Value.ToString().Trim();
+                                            }
+                                        }
+                                        <td data-th="@Html.Raw(CurrentAccessType.Replace(" ","").ToUpper())" access-id="@Html.Raw(CurrentAccessId)">
+                                            <select class="f-input" disabled="disabled">
+                                                @{
+
+                                                    XmlNodeList nodeAccessNames = Xdoc.GetElementsByTagName("Access");
+                                                    if (nodeRoleWiseAccessChild != null && nodeRoleWiseAccessChild.Count > 0)
+                                                    {
+                                                        XmlNode nodeAccess = nodeRoleWiseAccessChild[0];
+                                                        lowerCase = nodeRoleWiseAccessChild[0].Name.ToLower();
+                                                        r = new Regex(@"(^[a-z])|\.\s+(.)", RegexOptions.ExplicitCapture);
+                                                        if (nodeAccessNames.Count > 0)
+                                                        {
+                                                            foreach (XmlNode nodeAccessOption in nodeAccessNames)
+                                                            {
+                                                                if (nodeAccess.Name.ToLower() == "access" && nodeAccessOption.Attributes["type"].Value == "access")
+                                                                {
+                                                                    if (Convert.ToInt32(nodeAccess.Attributes["AccessId"].Value.ToString().Trim()) == Convert.ToInt32(nodeAccessOption.Attributes["accessid"].Value.ToString().Trim()))
+                                                                    {
+                                                                        <option value="@Html.Raw(nodeAccessOption.Attributes["accessid"].Value)" selected="selected">@Html.Raw(nodeAccessOption.InnerText)</option>
+                                                                    }
+                                                                    else
+                                                                    {
+                                                                        <option value="@Html.Raw(nodeAccessOption.Attributes["accessid"].Value)">@Html.Raw(nodeAccessOption.InnerText)</option>
+                                                                    }
+                                                                }
+                                                                else
+                                                                {
+                                                                    if (nodeAccess.Name.ToLower() != "access" && nodeAccessOption.Attributes["type"].Value == "other")
+                                                                    {
+                                                                        if (Convert.ToInt32(nodeAccess.Attributes["AccessId"].Value.ToString().Trim()) == Convert.ToInt32(nodeAccessOption.Attributes["accessid"].Value.ToString().Trim()))
+                                                                        {
+                                                                            <option value="@Html.Raw(nodeAccessOption.Attributes["accessid"].Value)" selected="selected">@Html.Raw(nodeAccessOption.InnerText)</option>
+                                                                        }
+                                                                        else
+                                                                        {
+                                                                            <option value="@Html.Raw(nodeAccessOption.Attributes["accessid"].Value)">@Html.Raw(nodeAccessOption.InnerText)</option>
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+
+                                                    }
+                                                    else
+                                                    {
+                                                        if (nodeAccessNames.Count > 0)
+                                                        {
+                                                            foreach (XmlNode nodeAccessOption in nodeAccessNames)
+                                                            {
+                                                                if (CurrentAccessType.ToLower() == "access" && nodeAccessOption.Attributes["type"].Value == "access")
+                                                                {
+                                                                    if (Convert.ToInt32(nodeAccessOption.Attributes["accessid"].Value.ToString().Trim()) == 0)
+                                                                    {
+                                                                        <option value="@Html.Raw(nodeAccessOption.Attributes["accessid"].Value)" selected="selected">@Html.Raw(nodeAccessOption.InnerText)</option>
+                                                                    }
+                                                                    else
+                                                                    {
+                                                                        <option value="@Html.Raw(nodeAccessOption.Attributes["accessid"].Value)">@Html.Raw(nodeAccessOption.InnerText)</option>
+                                                                    }
+                                                                }
+                                                                else
+                                                                {
+                                                                    if (CurrentAccessType.ToLower() != "access" && nodeAccessOption.Attributes["type"].Value == "other")
+                                                                    {
+                                                                        if (Convert.ToInt32(nodeAccessOption.Attributes["accessid"].Value.ToString().Trim()) == -99)
+                                                                        {
+                                                                            <option value="@Html.Raw(nodeAccessOption.Attributes["accessid"].Value)" selected="selected">@Html.Raw(nodeAccessOption.InnerText)</option>
+                                                                        }
+                                                                        else
+                                                                        {
+                                                                            <option value="@Html.Raw(nodeAccessOption.Attributes["accessid"].Value)">@Html.Raw(nodeAccessOption.InnerText)</option>
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            </select>
+                                        </td>
+                                    }
+                                }
+                            </tr>
+                        }
+                    }
+                }
+
+            </tbody>
+        </table>
+    </div>
+    <div class="div-flex gap-1 justify-right">
+        <button id="btnSave" class="button blue-btn"><i class="fa fa-save"></i> Save</button>
+        <button class="button blue-btn"><i class="fa fa-times"></i> Cancel</button>
+    </div>
+
+</div>

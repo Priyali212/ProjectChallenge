@@ -1,0 +1,106 @@
+﻿@{
+	ViewData["Title"] = "TimeSheetDetails";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="padder">
+	<div class="heading-div">
+		<h2 class="mbt-1 heading-2"><i class="fa fa-clock"></i>TimeSheet Admin</h2>
+		<div class="align-right mbt-1">
+			<button class="button blue-btn btn-setting"><i class="fa fa-plus"></i></button>
+		</div>
+	</div>
+
+	<div class="table-design-div">
+		<div class="filter-form gap-1 grid grid-col-4 tab-grid-col-2 mob-grid-col-1 pbt-1">
+			<div class="f-input-div filter-col">
+				<label> Resource Name</label>
+				@* <select class="f-input" id="txtByName">
+				</select> *@
+				<select class="f-input" name="ddbyname" id="txtByResName">
+					@* <option value="">Select Status</option>
+					<option value="Shikha">Shikha</option>
+					<option value="Menuka">Menuka</option>
+					<option value="Anand">Anand</option>
+					<option value="Tanmay">Tanmay</option>
+					<option value="Priyali">Priyali</option>
+					<option value="Swapnil">Swapnil</option>
+					<option value="Bhagwan">Bhagwan</option>
+					<option value="Suraj">Suraj</option>
+					<option value="Kushal">Kushal</option>
+					<option value="ChandraShekhar">ChandraShekhar</option>
+					<option value="Adit">Adit</option>
+					<option value="Ravindra">Ravindra</option>
+					<option value="Shivraj">Shivraj</option>
+					<option value="Apurva">Apurva</option>
+					<option value="Apurva">Sandip</option> *@
+
+				</select>
+			</div>
+			<div class="f-input-div filter-col">
+				<label>From Date</label>
+				<input type="text" class="f-input" id="txtFrmdt">
+			</div>
+			<div class="f-input-div filter-col">
+				<label>To Date</label>
+				<input type="text" class="f-input" id="txtTodt">
+			</div>
+
+			<div class="f-input-div filter-col align-lbt">
+				<button id="btnSearch" class="blue-btn search">
+					<i class="fa fa-search">Search</i>
+				</button>
+			</div>
+
+
+			<div class="f-input-div filter-col">
+				<label>Total Hours</label>
+				<input type="text" class="f-input" id="txttlhrs">
+			</div>
+
+
+		</div>
+
+
+		<div id="dvAdminDetails">
+			<div>
+				<table id="table-one" class="table-stripe resp-table table-view">
+					<thead>
+						<tr>
+							<th></th>
+							<th>Jira Id</th>
+							<th>Description</th>
+							<th>Date</th>
+							<th>Time spend </th>
+						</tr>
+					</thead>
+					<tbody id="table-1">
+					</tbody>
+				</table>
+
+			</div>
+		</div>
+
+		<div id="divPagination" class="pagination">
+		</div>
+		<div id="divPageDropdown" class="page-dropdown">
+			<select id="ddlPageList" name="ddlPageList" class="page-option getinthenews_page-option"></select>
+			@* <ul id="ddlPageList"></ul> *@
+		</div>
+
+	</div>
+</div>
+
+
+<input type="hidden" id="hdnTotalPageCount" />
+<input type="hidden" id="hdnCurrentPageIndex" />
+<input type="hidden" id="NextPageIndex" />
+
+@section Scripts {
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/js/jquery-ui.min.js"></script>
+	<link href="~/css/dtpicker.css" rel="stylesheet" />
+	<script src="~/js/jquery.datetimepicker.js"></script>
+	<script src="~/js/timesheetdetails.js"></script>
+}

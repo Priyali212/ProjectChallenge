@@ -1,0 +1,49 @@
+﻿@model QTask.Models.CreateUserModal;
+<div class="add-new-div popup-create-div">
+    <h3 class="mbt-1"><span><i class="fa fa-plus"></i> Add</span><a href="javascript:void(0)"><i class="fa fa-times"></i></a></h3>
+
+    <!-- overview-div start -->
+    <div class="overview-div">
+        <h4 class="heading-blue">
+            <span>
+                Overview
+            </span>
+        </h4>
+        <div class="add-new-form gap-1 mbt-1 grid grid-col-3 tab-grid-col-2 mob-grid-col-1">
+           
+            <div class="f-input-div filter-col">
+                <label>Name</label>
+                <input type="text" class="f-input" id="txtUserName" value="@Html.Raw(Model.UserFullName)">
+            </div>
+                     <div class="f-input-div filter-col">
+                <label>Group</label>
+                <select class="f-input" id="ddnGroup">
+                    <option value="0">Select</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!-- overview-div end -->
+    
+  
+    
+    <!-- other-div start -->
+    <div class="other-div">
+        
+        <div class="div-flex gap-1 justify-right pbt-1">
+            @{
+                if (Model.ID != null && Model.ID.ToString().Trim() != "")
+                {
+                    <button class="button blue-btn" id="btnUpdate" user-id="@Html.Raw(Model.ID.ToString().Trim())" onclick="ValidateUserCreation('update')"><i class="fa fa-save"></i> Update</button>
+                }
+                else
+                {
+                    <button class="button blue-btn" onclick="ValidateUserCreation('create')"><i class="fa fa-save"></i> Save</button>
+                }
+            }
+            <button class="button blue-btn"><i class="fa fa-times"></i> Cancel</button>
+        </div>
+    </div>
+
+    <!-- other-div end -->
+</div>

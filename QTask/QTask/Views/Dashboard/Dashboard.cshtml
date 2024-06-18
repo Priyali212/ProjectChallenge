@@ -1,0 +1,84 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!-- main-content-div start -->
+<div class="main-content-div">
+    <div class="padder">
+        <h2 class="mbt-1 heading-2"><i class="fa fa-tachometer-alt"></i> Dashboard</h2>
+        <!-- card-design-div start -->
+        <div class="card-design-div grid-col-4 tab-grid-col-2 mob-grid-col-1 mbt-1">
+            <div class="col-div">
+                <div class="card-div">
+                    <i class="fa fa-chart-line"></i>
+                    <div>
+                        <p>Today Sale</p>
+                        <h5>$1234</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-div">
+                <div class="card-div">
+                    <i class="fa fa-chart-bar"></i>
+                    <div>
+                        <p>Today Sale</p>
+                        <h5>$1234</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-div">
+                <div class="card-div">
+                    <i class="fa fa-chart-area"></i>
+                    <div>
+                        <p>Today Sale</p>
+                        <h5>$1234</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-div">
+                <div class="card-div">
+                    <i class="fa fa-chart-pie"></i>
+                    <div>
+                        <p>Today Sale</p>
+                        <h5>$1234</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- card-design-div end -->
+        <div class="table-design-div">
+            <div class="align-right mbt-1">
+                <button class="button blue-btn btn-setting"><i class="fa fa-cog"></i></button>
+                <!-- <button class="button red-btn" id="delete" disabled><i class="fa fa-trash"></i> Delete</button> -->
+            </div>
+            <!-- setting-div start -->
+            <div class="setting-div nav-bar">
+                <ul>
+                    <li><a href="javascript:void(0)" class="btn-back-setting"><i class="fa fa-arrow-right ico round-bg"></i> Back</a></li>
+                    <li><a href="javascript:void(0)" class="filter-btn"><i class="fa fa-filter ico round-bg"></i> Filter</a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-check ico round-bg"></i> Approve</a></li>
+                    <li><a href="javascript:void(0)" class="add-new-btn"><i class="fa fa-plus ico round-bg"></i> Create</a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-trash ico round-bg"></i> Delete</a></li>
+                </ul>
+            </div>
+
+            <!-- setting-div end -->
+            <table id="table-one" class="table-stripe resp-table table-view">
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" id="checkAll"></th>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Office</th>
+                        <th>Age</th>
+                        <th>Start date</th>
+                        <th>Salary</th>
+                        <th width="100">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="table-1"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- main-content-div end -->

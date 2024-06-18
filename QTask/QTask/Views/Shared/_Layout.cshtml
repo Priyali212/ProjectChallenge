@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
+	<!-- left-panel-div start -->
+	<div class="left-panel-div">
+		<div class="logo-div">
+			<a href="#">
+				<img src="~/images/rec-logo.png">
+			</a>
+		</div>
+
+
+		<!-- nav-bar start -->
+		<div class="nav-bar">
+			<ul>
+				<li class="dropdown-li">
+					<a href="javascript:void(0)" class="dropdown-anchor">
+						<i class="fa fa-clone alt ico round-bg"></i>
+						Timesheet/Tasksheet<i class="fa fa-angle-left"></i>
+					</a>
+					<ul class="sub-menu-div">
+
+						<li><a href="/TaskSheet/TaskSheet"><i class="fa fa-book ico round-bg"></i> TaskSheetManagement</a></li>
+						<li><a href="/Timesheet/Timesheet"><i class="fa fa-pen ico round-bg"></i>Timesheet Page</a></li>
+						<li><a href="/TimesheetAdmin/TimesheetAdmin"><i class="fa fa-clock ico round-bg"></i>Timesheet Admin</a></li>
+						<li><a href="/GenerateReport/GenerateReport"><i class="fa fa-download ico round-bg"></i>Generate Report</a></li>
+						<li><a href="/CheckStatus/CheckStatus"><i class="fa fa-download ico round-bg"></i>Check Status</a></li>
+						@* <li><a href="/TimeSheetDashboard/TimeSheetDashboard"><i class="fa fa-clock ico round-bg"></i>Timesheet Dashboard</a></li> *@
+					</ul>
+				</li>
+				@* <li><a href="/roles/roles"><i class="fa fa-tachometer-alt ico round-bg"></i> Role Management</a></li>
+				<li><a href="/contact/contact"><i class="fa fa-phone-alt ico round-bg"></i> Contact</a></li>
+				<li><a href="/Module/Module"><i class="fa fa-phone-alt ico round-bg"></i> Module</a></li> *@
+
+				@* <li class="dropdown-li">
+					<a href="javascript:void(0)" class="dropdown-anchor">
+						<i class="fa fa-tachometer-alt ico round-bg"></i>
+						Dashboard <i class="fa fa-angle-left"></i>
+					</a>
+					
+				</li> *@
+				
+				
+
+			</ul>
+		</div>
+		<!-- nav-bar end -->
+
+	</div>
+	<!-- left-panel-div end -->
+	<!-- right-panel-div start -->
+	<div class="right-panel-div">
+		<!-- top-menu-div start -->
+		<div class="top-menu-div">
+			<a href="javascript:void(0)" class="toggle-btn round-bg">
+				<i class="fa fa-bars"></i>
+			</a>
+
+			<div class="profile-div">
+				<a href="javascript:void(0)" class="profile-link">
+					<img src="http://thememinister.com/crm/assets/dist/img/avatar5.png">
+				</a>
+				<!-- slide-profile-panel-div start -->
+				<div class="slide-profile-panel-div nav-bar">
+					<ul>
+						<li><a href="javascript:void(0)"><i class="fa fa-user ico round-bg"></i> My Profile</a></li>
+						<li><a href="javascript:void(0)"><i class="fa fa-cog ico round-bg"></i> Setting</a></li>
+						<li><a href="/general/Index"><i class="fa fa-lock ico round-bg"></i> Logout</a></li>
+					</ul>
+				</div>
+				<!-- slide-profile-panel-div end -->
+
+			</div>
+		</div>
+		<!-- top-menu-div end -->
+		@RenderBody()
+		<input type="hidden" id="hdToken" />
+	</div>
+	<!-- right-panel-div end -->
+	<!-- js start -->
+	<script src="~/lib/jquery/dist/jquery.js"></script>
+	<script src="~/js/site.js"></script>
+	<script src="~/js/table-data.js"></script>
+	<script src="~/js/common.js"></script>
+	<script src="~/lib/tinymce/tinymce.min.js"></script>
+	@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

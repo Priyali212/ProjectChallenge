@@ -1,0 +1,853 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\QTask.bundle.scp.css",
+      "PackagePath": "staticwebassets\\QTask.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\css\\AddUser.css",
+      "PackagePath": "staticwebassets\\css\\AddUser.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\css\\Dashboard.css",
+      "PackagePath": "staticwebassets\\css\\Dashboard.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\css\\Login.css",
+      "PackagePath": "staticwebassets\\css\\Login.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\css\\all.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\css\\calendar.css",
+      "PackagePath": "staticwebassets\\css\\calendar.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\css\\dtpicker.css",
+      "PackagePath": "staticwebassets\\css\\dtpicker.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\images\\Admin.jpg",
+      "PackagePath": "staticwebassets\\images\\Admin.jpg"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\images\\QLogo.png",
+      "PackagePath": "staticwebassets\\images\\QLogo.png"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\images\\loading.gif",
+      "PackagePath": "staticwebassets\\images\\loading.gif"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\images\\logo-2.jpg",
+      "PackagePath": "staticwebassets\\images\\logo-2.jpg"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\images\\logo-new.png",
+      "PackagePath": "staticwebassets\\images\\logo-new.png"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\images\\logo.jpg",
+      "PackagePath": "staticwebassets\\images\\logo.jpg"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\images\\rec-logo.png",
+      "PackagePath": "staticwebassets\\images\\rec-logo.png"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\js\\CheckStatus.js",
+      "PackagePath": "staticwebassets\\js\\CheckStatus.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\js\\Contact.js",
+      "PackagePath": "staticwebassets\\js\\Contact.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\js\\GenerateReport.js",
+      "PackagePath": "staticwebassets\\js\\GenerateReport.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\js\\Login.js",
+      "PackagePath": "staticwebassets\\js\\Login.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\js\\Module.js",
+      "PackagePath": "staticwebassets\\js\\Module.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\js\\TimeSheet.js",
+      "PackagePath": "staticwebassets\\js\\TimeSheet.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\js\\TimeSheetDashboard.js",
+      "PackagePath": "staticwebassets\\js\\TimeSheetDashboard.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\js\\TimeSheetDetails.js",
+      "PackagePath": "staticwebassets\\js\\TimeSheetDetails.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\js\\common.js",
+      "PackagePath": "staticwebassets\\js\\common.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\js\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-ui.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\js\\jquery.datetimepicker.js",
+      "PackagePath": "staticwebassets\\js\\jquery.datetimepicker.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\js\\role-management.js",
+      "PackagePath": "staticwebassets\\js\\role-management.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\js\\table-data.js",
+      "PackagePath": "staticwebassets\\js\\table-data.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\js\\tasksheet.js",
+      "PackagePath": "staticwebassets\\js\\tasksheet.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\js\\tinymce_config.js",
+      "PackagePath": "staticwebassets\\js\\tinymce_config.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\icons\\default\\icons.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\icons\\default\\icons.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\icons\\default\\icons.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\icons\\default\\icons.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\langs\\README.md",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\langs\\README.md"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\license.txt",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\license.txt"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\models\\dom\\model.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\models\\dom\\model.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\models\\dom\\model.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\models\\dom\\model.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\advlist\\plugin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\advlist\\plugin.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\advlist\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\advlist\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\anchor\\plugin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\anchor\\plugin.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\anchor\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\anchor\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\autolink\\plugin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\autolink\\plugin.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\autolink\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\autolink\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\autoresize\\plugin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\autoresize\\plugin.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\autoresize\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\autoresize\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\autosave\\plugin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\autosave\\plugin.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\autosave\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\autosave\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\charmap\\plugin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\charmap\\plugin.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\charmap\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\charmap\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\code\\plugin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\code\\plugin.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\code\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\code\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\codesample\\plugin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\codesample\\plugin.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\codesample\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\codesample\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\directionality\\plugin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\directionality\\plugin.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\directionality\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\directionality\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\emoticons\\js\\emojiimages.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\emoticons\\js\\emojiimages.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\emoticons\\js\\emojiimages.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\emoticons\\js\\emojiimages.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\emoticons\\js\\emojis.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\emoticons\\js\\emojis.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\emoticons\\js\\emojis.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\emoticons\\js\\emojis.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\emoticons\\plugin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\emoticons\\plugin.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\emoticons\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\emoticons\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\fullscreen\\plugin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\fullscreen\\plugin.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\fullscreen\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\fullscreen\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\help\\plugin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\help\\plugin.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\help\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\help\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\image\\plugin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\image\\plugin.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\image\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\image\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\importcss\\plugin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\importcss\\plugin.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\importcss\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\importcss\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\insertdatetime\\plugin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\insertdatetime\\plugin.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\insertdatetime\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\insertdatetime\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\link\\plugin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\link\\plugin.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\link\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\link\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\lists\\plugin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\lists\\plugin.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\lists\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\lists\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\media\\plugin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\media\\plugin.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\media\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\media\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\nonbreaking\\plugin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\nonbreaking\\plugin.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\nonbreaking\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\nonbreaking\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\pagebreak\\plugin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\pagebreak\\plugin.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\pagebreak\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\pagebreak\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\preview\\plugin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\preview\\plugin.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\preview\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\preview\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\quickbars\\plugin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\quickbars\\plugin.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\quickbars\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\quickbars\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\save\\plugin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\save\\plugin.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\save\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\save\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\searchreplace\\plugin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\searchreplace\\plugin.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\searchreplace\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\searchreplace\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\table\\plugin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\table\\plugin.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\table\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\table\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\template\\plugin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\template\\plugin.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\template\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\template\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\visualblocks\\plugin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\visualblocks\\plugin.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\visualblocks\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\visualblocks\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\visualchars\\plugin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\visualchars\\plugin.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\visualchars\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\visualchars\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\wordcount\\plugin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\wordcount\\plugin.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\plugins\\wordcount\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\plugins\\wordcount\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\content\\dark\\content.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\content\\dark\\content.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\content\\dark\\content.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\content\\dark\\content.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\content\\default\\content.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\content\\default\\content.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\content\\default\\content.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\content\\default\\content.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\content\\document\\content.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\content\\document\\content.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\content\\document\\content.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\content\\document\\content.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\content\\tinymce-5-dark\\content.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\content\\tinymce-5-dark\\content.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\content\\tinymce-5-dark\\content.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\content\\tinymce-5-dark\\content.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\content\\tinymce-5\\content.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\content\\tinymce-5\\content.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\content\\tinymce-5\\content.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\content\\tinymce-5\\content.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\content\\writer\\content.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\content\\writer\\content.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\content\\writer\\content.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\content\\writer\\content.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\ui\\oxide-dark\\content.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\ui\\oxide-dark\\content.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\ui\\oxide-dark\\content.inline.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\ui\\oxide-dark\\content.inline.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\ui\\oxide-dark\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\ui\\oxide-dark\\content.inline.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\ui\\oxide-dark\\content.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\ui\\oxide-dark\\content.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\ui\\oxide-dark\\skin.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\ui\\oxide-dark\\skin.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\ui\\oxide-dark\\skin.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\ui\\oxide-dark\\skin.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\ui\\oxide\\content.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\ui\\oxide\\content.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\ui\\oxide\\content.inline.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\ui\\oxide\\content.inline.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\ui\\oxide\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\ui\\oxide\\content.inline.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\ui\\oxide\\content.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\ui\\oxide\\content.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\ui\\oxide\\skin.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\ui\\oxide\\skin.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\ui\\oxide\\skin.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\ui\\oxide\\skin.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\ui\\tinymce-5-dark\\content.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\ui\\tinymce-5-dark\\content.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\ui\\tinymce-5-dark\\content.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\ui\\tinymce-5-dark\\content.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\ui\\tinymce-5\\content.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\ui\\tinymce-5\\content.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\ui\\tinymce-5\\content.inline.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\ui\\tinymce-5\\content.inline.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\ui\\tinymce-5\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\ui\\tinymce-5\\content.inline.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\ui\\tinymce-5\\content.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\ui\\tinymce-5\\content.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\ui\\tinymce-5\\skin.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\ui\\tinymce-5\\skin.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\ui\\tinymce-5\\skin.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\ui\\tinymce-5\\skin.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\themes\\silver\\theme.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\themes\\silver\\theme.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\themes\\silver\\theme.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\themes\\silver\\theme.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\tinymce.d.ts",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\tinymce.d.ts"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\tinymce.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\tinymce.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\tinymce\\tinymce.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\tinymce.min.js"
+    },
+    {
+      "Id": "D:\\Project\\Qtask\\QTask\\QTask\\wwwroot\\lib\\ui\\Ang.js",
+      "PackagePath": "staticwebassets\\lib\\ui\\Ang.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.QTask.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.QTask.props",
+      "PackagePath": "build\\QTask.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.QTask.props",
+      "PackagePath": "buildMultiTargeting\\QTask.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.QTask.props",
+      "PackagePath": "buildTransitive\\QTask.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

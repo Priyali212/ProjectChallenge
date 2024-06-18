@@ -1,0 +1,201 @@
+﻿@model QTask.Models.ContactListModel;
+@{
+    Layout = "~/views/shared/_layout.cshtml";
+}
+
+
+
+<div class="padder">
+    <div class="heading-div">
+        <h2 class="mbt-1 heading-2"><i class="fa fa-phone-alt"></i> Contact</h2>
+        <div class="align-right mbt-1">
+            <button class="button blue-btn btn-setting"><i class="fa fa-plus"></i></button>
+            <!-- <button class="button red-btn" id="delete" disabled><i class="fa fa-trash"></i> Delete</button> -->
+        </div>
+    </div>
+
+    <div class="table-design-div">
+        <!-- popup-create-div start -->
+        <div id="dvCreateUsers">
+        </div>
+        <!-- popup-create-div end -->
+        <!-- setting-div end -->
+        <div id="dvUserList">
+            @*@Html.Partial("_UserList",Model)*@
+            <div class="mbt-1">
+               <!--<div class="search-role-input-div mbt-1">
+                    <div class="f-input-div">
+                        <label>Name</label>
+                        <div class="div-flex gap-1">
+                            <div class="input-div">
+                                <input type="text" id="txtKeyword" class="f-input">
+                            </div>
+                            <div class="btn-div">
+                                <button id="btnSearch" class="button blue-btn"><i class="fa fa-search"></i> Search</button>
+                                @* <button class="button blue-btn"><i class="fa fa-times"></i> Cancel</button> *@
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>-->
+            </div>
+            <div>
+              
+
+                <table id="table-one" class="table-stripe resp-table table-view">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Name</th>
+                            <th>User Id</th>
+                            <th>Group Name</th>
+                            <th>IsAdmin</th>
+                            <th width="100">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-1">
+                    </tbody>
+                </table>
+             
+            </div>
+        </div>
+
+    </div>
+
+
+
+</div>
+<!-- view-detail-sec start -->
+<div class="view-detail-sec">
+    <div class="view-detail-bg">
+        <h3 class="mbt-1">
+            <span><i class="fa fa-eye"></i> View Details</span>
+            <span class="div-flex gap-1">
+                @{
+                    if (ViewBag != null && ViewBag.Edit)
+                    {
+                        <button class="button blue-btn popup-edit-profile-btn"><i class="fa fa-pen"></i> Edit</button>
+                        <a href="javascript:void(0)"><i class="fa fa-times"></i></a>
+                    }
+                }
+
+            </span>
+        </h3>
+
+
+      
+    </div>
+</div>
+<!-- view-detail-sec end -->
+<!-- right-slider start -->
+<!-- slide-profile-panel-div start -->
+<div class="slide-profile-panel-div nav-bar">
+    <ul>
+        <li><a href="javascript:void(0)" class="popup-myprofile-btn"><i class="fa fa-user ico round-bg"></i> My Profile</a></li>
+        <li><a href="javascript:void(0)"><i class="fa fa-cog ico round-bg"></i> Setting</a></li>
+        <li><a href="user-management.html"><i class="fa fa-cog ico round-bg"></i> User Management</a></li>
+        <li><a href="role-management.html"><i class="fa fa-cog ico round-bg"></i> Role Management</a></li>
+        <li><a href="javascript:void(0)"><i class="fa fa-lock ico round-bg"></i> Logout</a></li>
+    </ul>
+</div>
+<!-- slide-profile-panel-div end -->
+<!-- slide-setting-div start -->
+<div class="setting-div nav-bar">
+    <ul>
+        <li><a href="javascript:void(0)" class="btn-back-setting"><i class="fa fa-arrow-right ico round-bg"></i> Back</a></li>
+        <li><a href="javascript:void(0)" class="popup-filter-btn"><i class="fa fa-filter ico round-bg"></i> Filter</a></li>
+        <li><a href="javascript:void(0)" class="popup-approve-btn"><i class="fa fa-check ico round-bg"></i> Approve</a></li>
+        @{
+            if (ViewBag.Edit != null && ViewBag.Edit)
+            {
+                <li><a href="javascript:void(0)" class="add-new-btn"><i class="fa fa-plus ico round-bg"></i> Create</a></li>
+            }
+            if (ViewBag.Edit != null && ViewBag.Delete)
+            {
+                <li><a href="javascript:void(0)"><i class="fa fa-trash ico round-bg"></i> Delete</a></li>
+            }
+        }
+
+    </ul>
+</div>
+<!-- slide-setting-div end -->
+
+<!-- slide-action-div start -->
+<div class="slide-action-div">
+    <div class="nav-bar">
+        <ul>
+            <li><a href="javascript:void(0)" class="btn-back-setting"><i class="fa fa-arrow-right ico round-bg"></i> Back</a></li>
+            @{
+                if (ViewBag != null && ViewBag.Edit)
+                {
+                    <li><a href="javascript:void(0)" onclick="EditUserDetails(this)"><i class="fa fa-pen ico round-bg"></i> Edit</a></li>
+                }
+                if (ViewBag != null && ViewBag.Delete)
+                {
+                    <li><a href="javascript:void(0)" id="lnkDelete"><i class="fa fa-trash ico round-bg"></i> Delete</a></li>
+                }
+            }
+        </ul>
+    </div>
+</div>
+<!-- slide-action-div end -->
+<!-- right-slider end -->
+@{
+    if (ViewBag.Edit != null && ViewBag.Edit)
+    {
+        <!-- Create User Form Start-->
+        <div class="add-new-div popup-create-div" id="Canceltop">
+            <h3 class="mbt-1"><span><i class="fa fa-plus"></i> Create</span><a href="javascript:void(0)"><i class="fa fa-times"></i></a></h3>
+
+            <!-- overview-div start -->
+            <div class="overview-div">
+                <h4 class="heading-blue">
+                    <span>
+                        Overview
+                    </span>
+                </h4>
+                <div class="add-new-form gap-1 mbt-1 grid grid-col-3 tab-grid-col-2 mob-grid-col-1">
+                    
+                    <div class="f-input-div filter-col">
+                        <label>User Name</label>
+                        <input type="text" class="f-input" id="txtUserName">
+                    </div>
+                    <div class="f-input-div filter-col">
+                        <label>Full Name</label>
+                        <input type="text" class="f-input" id="txtUserFullName">
+                    </div>
+                   
+                    <div class="f-input-div filter-col">
+                        <label>Group Name</label>
+                        <select class="f-input" id="ddnGroupName">
+                            <option value="0">Select</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+          
+            <!-- other-div start -->
+            <div class="other-div">
+                <h4 class="heading-blue">
+                    <span>
+                        Other
+                    </span>
+                </h4>
+             
+                <div class="div-flex gap-1 justify-right pbt-1">
+                    <button class="button blue-btn" id="btnUpdate" user-id="" onclick="ValidateUserCreation('update')" style="display:none;"><i class="fa fa-save"></i> Update</button>
+                    <button class="button blue-btn" id="btnSave" onclick="ValidateUserCreation('create')"><i class="fa fa-save"></i> Save</button>
+                    <button class="button blue-btn" id="btnCancel"><i class="fa fa-times"></i> Cancel</button>
+                </div>
+            </div>
+
+            <!-- other-div end -->
+        </div>
+        <!-- Create user Form End-->
+    }
+}
+
+@section Scripts{
+    <script src="~/js/Contact.js"></script>
+}
