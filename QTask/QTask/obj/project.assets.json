@@ -6308,23 +6308,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Priyali\\.nuget\\packages\\": {},
+    "C:\\Users\\menuka\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project\\Qtask\\QTask\\QTask\\QTask.csproj",
+      "projectUniqueName": "C:\\Users\\menuka\\Desktop\\Git\\ProjectChallenge\\QTask\\QTask\\QTask.csproj",
       "projectName": "QTask",
-      "projectPath": "D:\\Project\\Qtask\\QTask\\QTask\\QTask.csproj",
-      "packagesPath": "C:\\Users\\Priyali\\.nuget\\packages\\",
-      "outputPath": "D:\\Project\\Qtask\\QTask\\QTask\\obj\\",
+      "projectPath": "C:\\Users\\menuka\\Desktop\\Git\\ProjectChallenge\\QTask\\QTask\\QTask.csproj",
+      "packagesPath": "C:\\Users\\menuka\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\menuka\\Desktop\\Git\\ProjectChallenge\\QTask\\QTask\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Priyali\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\menuka\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6334,14 +6334,15 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://packagesource": {},
+        "https://www.nuget.org/api/v2/": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Project\\Qtask\\QTask\\QTaskDataLayer\\QTaskDataLayer.csproj": {
-              "projectPath": "D:\\Project\\Qtask\\QTask\\QTaskDataLayer\\QTaskDataLayer.csproj"
+            "C:\\Users\\menuka\\Desktop\\Git\\ProjectChallenge\\QTask\\QTaskDataLayer\\QTaskDataLayer.csproj": {
+              "projectPath": "C:\\Users\\menuka\\Desktop\\Git\\ProjectChallenge\\QTask\\QTaskDataLayer\\QTaskDataLayer.csproj"
             }
           }
         }
