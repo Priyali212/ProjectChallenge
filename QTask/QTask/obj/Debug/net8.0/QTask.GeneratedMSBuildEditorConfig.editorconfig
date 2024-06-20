@@ -9,111 +9,111 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = QTask
 build_property.RootNamespace = QTask
-build_property.ProjectDir = D:\Project\Qtask\QTask\QTask\
+build_property.ProjectDir = D:\Project\ProjectChallenge\ProjectChallenge\QTask\QTask\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Project\Qtask\QTask\QTask
+build_property.MSBuildProjectDirectory = D:\Project\ProjectChallenge\ProjectChallenge\QTask\QTask
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Project/Qtask/QTask/QTask/Views/CheckStatus/CheckStatus.cshtml]
+[D:/Project/ProjectChallenge/ProjectChallenge/QTask/QTask/Views/CheckStatus/CheckStatus.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tTdGF0dXNcQ2hlY2tTdGF0dXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project/Qtask/QTask/QTask/Views/Contact/Contact.cshtml]
+[D:/Project/ProjectChallenge/ProjectChallenge/QTask/QTask/Views/Contact/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project/Qtask/QTask/QTask/Views/Contact/_CreateUser.cshtml]
+[D:/Project/ProjectChallenge/ProjectChallenge/QTask/QTask/Views/Contact/_CreateUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxfQ3JlYXRlVXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project/Qtask/QTask/QTask/Views/Contact/_UserList.cshtml]
+[D:/Project/ProjectChallenge/ProjectChallenge/QTask/QTask/Views/Contact/_UserList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxfVXNlckxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project/Qtask/QTask/QTask/Views/Dashboard/Dashboard.cshtml]
+[D:/Project/ProjectChallenge/ProjectChallenge/QTask/QTask/Views/Dashboard/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXERhc2hib2FyZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project/Qtask/QTask/QTask/Views/Error/Error.cshtml]
+[D:/Project/ProjectChallenge/ProjectChallenge/QTask/QTask/Views/Error/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project/Qtask/QTask/QTask/Views/GenerateReport/GenerateReport.cshtml]
+[D:/Project/ProjectChallenge/ProjectChallenge/QTask/QTask/Views/GenerateReport/GenerateReport.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZXJhdGVSZXBvcnRcR2VuZXJhdGVSZXBvcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project/Qtask/QTask/QTask/Views/Login/ConfirmPassword.cshtml]
+[D:/Project/ProjectChallenge/ProjectChallenge/QTask/QTask/Views/Login/ConfirmPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQ29uZmlybVBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project/Qtask/QTask/QTask/Views/Login/ForgotPassword.cshtml]
+[D:/Project/ProjectChallenge/ProjectChallenge/QTask/QTask/Views/Login/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cRm9yZ290UGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project/Qtask/QTask/QTask/Views/Login/Login.cshtml]
+[D:/Project/ProjectChallenge/ProjectChallenge/QTask/QTask/Views/Login/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project/Qtask/QTask/QTask/Views/Module/Module.cshtml]
+[D:/Project/ProjectChallenge/ProjectChallenge/QTask/QTask/Views/Module/Module.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kdWxlXE1vZHVsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project/Qtask/QTask/QTask/Views/Profile/AddUser.cshtml]
+[D:/Project/ProjectChallenge/ProjectChallenge/QTask/QTask/Views/Profile/AddUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxBZGRVc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project/Qtask/QTask/QTask/Views/Roles/Modules.cshtml]
+[D:/Project/ProjectChallenge/ProjectChallenge/QTask/QTask/Views/Roles/Modules.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcTW9kdWxlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project/Qtask/QTask/QTask/Views/Roles/Roles.cshtml]
+[D:/Project/ProjectChallenge/ProjectChallenge/QTask/QTask/Views/Roles/Roles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcUm9sZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project/Qtask/QTask/QTask/Views/Roles/_RolesAccessList.cshtml]
+[D:/Project/ProjectChallenge/ProjectChallenge/QTask/QTask/Views/Roles/_RolesAccessList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcX1JvbGVzQWNjZXNzTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project/Qtask/QTask/QTask/Views/Roles/_RoleWiseAccessList.cshtml]
+[D:/Project/ProjectChallenge/ProjectChallenge/QTask/QTask/Views/Roles/_RoleWiseAccessList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcX1JvbGVXaXNlQWNjZXNzTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project/Qtask/QTask/QTask/Views/Shared/Error.cshtml]
+[D:/Project/ProjectChallenge/ProjectChallenge/QTask/QTask/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project/Qtask/QTask/QTask/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Project/ProjectChallenge/ProjectChallenge/QTask/QTask/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project/Qtask/QTask/QTask/Views/TaskSheet/TaskSheet.cshtml]
+[D:/Project/ProjectChallenge/ProjectChallenge/QTask/QTask/Views/TaskSheet/TaskSheet.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFza1NoZWV0XFRhc2tTaGVldC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project/Qtask/QTask/QTask/Views/TimesheetAdmin/TimesheetAdmin.cshtml]
+[D:/Project/ProjectChallenge/ProjectChallenge/QTask/QTask/Views/TimesheetAdmin/TimesheetAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGltZXNoZWV0QWRtaW5cVGltZXNoZWV0QWRtaW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project/Qtask/QTask/QTask/Views/TimeSheetDashboard/TimeSheetDashboard.cshtml]
+[D:/Project/ProjectChallenge/ProjectChallenge/QTask/QTask/Views/TimeSheetDashboard/TimeSheetDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGltZVNoZWV0RGFzaGJvYXJkXFRpbWVTaGVldERhc2hib2FyZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project/Qtask/QTask/QTask/Views/Timesheet/Timesheet.cshtml]
+[D:/Project/ProjectChallenge/ProjectChallenge/QTask/QTask/Views/Timesheet/Timesheet.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGltZXNoZWV0XFRpbWVzaGVldC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project/Qtask/QTask/QTask/Views/_ViewImports.cshtml]
+[D:/Project/ProjectChallenge/ProjectChallenge/QTask/QTask/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project/Qtask/QTask/QTask/Views/_ViewStart.cshtml]
+[D:/Project/ProjectChallenge/ProjectChallenge/QTask/QTask/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project/Qtask/QTask/QTask/Views/Shared/_Layout.cshtml]
+[D:/Project/ProjectChallenge/ProjectChallenge/QTask/QTask/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-fx7h9fe1q0

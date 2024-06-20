@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QTask")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ff724d880cd8b9f4d2276c186ec1db414d0b69f")]
 [assembly: System.Reflection.AssemblyProductAttribute("QTask")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QTask")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
