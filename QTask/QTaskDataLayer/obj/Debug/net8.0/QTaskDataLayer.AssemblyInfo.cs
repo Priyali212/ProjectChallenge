@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QTaskDataLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff2689d8c37fc9bb46274c00b4966e86507abdf8")]
 [assembly: System.Reflection.AssemblyProductAttribute("QTaskDataLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QTaskDataLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
